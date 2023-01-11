@@ -1,0 +1,2432 @@
+<!DOCTYPE html><!--  Last Published: Wed Jan 11 2023 19:47:07 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="63b08a4f64ba711dd93e22c6" data-wf-site="63b08a4f64ba71419b3e22b9">
+<head>
+  <meta charset="utf-8">
+  <title>The Real World</title>
+  <meta content="The universe has blessed many of you with the chance you&#x27;d been hoping for." name="description">
+  <meta content="The Real World" property="og:title">
+  <meta content="The universe has blessed many of you with the chance you&#x27;d been hoping for." property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/63430fa23ef0a5a03a4a0770_Mask%20group.png" property="og:image">
+  <meta content="The Real World" property="twitter:title">
+  <meta content="The universe has blessed many of you with the chance you&#x27;d been hoping for." property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/63430fa23ef0a5a03a4a0770_Mask%20group.png" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/the-real-world-82e306e8137855ae6e2603cf.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Josefin Sans:100,200,300,regular,500,600,700","Courier Prime:regular,700","Genos:100,200,regular,600,800","Outfit:100,regular,600,800","Righteous:regular","Orbitron:regular,600,800","Goldman:regular,700","Audiowide:regular"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon"><!--  Google Tag Manager  -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-THPMNPT');</script>
+  <!--  End Google Tag Manager  -->
+  <!--  Play Load animation only once using cookies  -->
+  <style data-info="hacks-head">
+/*The page-wrapper is initially hidden*/
+.load-animation {
+  display:none;
+}
+</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js" data-info="hacks-head"></script>
+  <script data-info="hacks-head">
+document.addEventListener("DOMContentLoaded", function(event) { 
+  // get a reference to the page wrapper
+  //const pageWrapper = document.querySelector(".load-animation");
+  // get a reference to the loading wrapper
+  const loadingWrapper = document.querySelector('.load-animation');
+  // get the 'seenAnimation' cookie and store in a seenAnimation variable
+  const seenAnimation = Cookies.get('seenAnimation');
+  // if the 'seenAnimation' cookie is undefined
+  if(!seenAnimation){
+    // display the loading-wrapper 
+    loadingWrapper.style.display = "flex";
+    // show the page-wrapper 
+    // after a set duration of 3000 milliseconds
+    // (the time it takes to show the loading-wrapper in this case)
+    setTimeout(()=>{
+      //pageWrapper.style.display = "block";
+    }, 3000);
+    // set the 'seenAnimation' cookie 
+    Cookies.set('seenAnimation', 1, { expires: 1 });
+  }
+  else{
+    // else if the 'seenAnimation' cookie exists
+    // the user has already seen the animation
+    // and so
+    // hide the loading-wrapper
+    loadingWrapper.style.display = "none";
+    // show the page-wrapper 
+    //pageWrapper.style.display = "block";
+}
+//This is for the "Clear my 24 hour cookie" button on this Hacks template
+// this is not needed on your live site
+  // when .clear-cookie is clicked 
+  $('.clear-cookie').click(()=>{
+    // remove the 'seenGif' cookie
+    // the animation can now play again since
+    //'seenAnimation' becomes undefined
+    Cookies.remove('seenAnimation');
+  });
+});
+</script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Use Webflow Interactions to play animation once per day",
+      "description": "In this Webflow hack #10, we learn how to use Webflow interactions and cookies to only play your loading animation once per day.",
+      "thumbnailUrl": "https://i9.ytimg.com/vi/mFbk1O_8Nio/maxresdefault.jpg?time=1596197100000&sqp=COyRkPkF&rs=AOn4CLC0Efp-ovHOal_82OQLo6rgwVI2bQ",        
+      "uploadDate": "2019-05-13",
+      "duration": "PT9M17S",
+      "embedUrl": "https://youtu.be/mFbk1O_8Nio"
+    }
+</script>
+</head>
+<body class="body-2">
+  <div class="w-embed w-iframe">
+    <!--  Google Tag Manager (noscript)  -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THPMNPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!--  End Google Tag Manager (noscript)  -->
+  </div>
+  <a href="#the-choice-is-yours" style="display:flex" class="div-block-46 w-inline-block">
+    <div class="div-block-48"></div>
+    <div class="text-block-6">The universe has blessed many of you with the chance you&#x27;d been hoping for.<br></div><img src="images/25.svg" loading="lazy" alt="" class="image-15"><img src="images/27.svg" loading="lazy" alt="" class="image-15-copy"><img src="images/26.svg" loading="lazy" alt="" class="image-15-copy-copy">
+    <div data-w-id="6fa3c6bf-f7ab-4766-27df-25d716960dce" class="html-embed-7 w-embed">
+      <?xml version="1.0" ?>
+      <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg fill="#fff" height="100%" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"></path>
+      </svg>
+    </div>
+  </a>
+  <div class="hero-section wf-section">
+    <div id="full-video" class="full-video">
+      <div id="ratio-box" class="jail__ratio-box--16-9 full-width">
+        <div class="html-embed w-embed w-script">
+          <script src="https://fast.wistia.com/assets/external/E-v1.js" async=""></script>
+          <div class="wistia_embed wistia_async_l1d2fsacor allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen muted=true autoplay=true controlsVisibleOnLoad=false fullscreenButton=false playbar=false playButton=false settingsControl=false silentAutoPlay=true smallPlayButton=false volumeControl=false videoFoam=true playSuspendedOffScreen=true fitStrategy=cover fakeFullscreen=false fullscreenOnRotateToLandscape=true" style="height:100%;width:100%">&nbsp;</div>
+          <script>
+//GET THE VIDEO
+window._wq = window._wq || [];
+_wq.push({ id: 'l1d2fsacor', onReady: function(video) {
+    var video = Wistia.api("l1d2fsacor");
+    video.play();
+    var isPlaying = false;
+    $(document).on('click', '#hero-play' ,function() {
+      //alert("width = " + $(window).width());
+      if($(window).width() <= 767){
+      	// only go fullscreen if it's ios
+      	var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      	if (isIOS) {
+          video.requestFullscreen();
+        }
+        $('#ratio-box').css("height", "auto");
+      $('#full-video').css("width", "100%");
+      $('#full-video').css("left", "auto");
+      $('#full-video').css("right", "auto");
+      }
+    	if(!isPlaying){
+    		video.time(0);
+      	video.volume(0.8);
+      } 
+      video.play();
+      video.unmute();
+      isPlaying = true;
+    });
+    video.bind("pause", function() { 
+    	$('#hero-content').css("display", "block");
+    	$('#hero-content').css("opacity", "1");
+      $('#ratio-box').css("height", "100%");      
+      $('#full-video').css("width", "178vh");
+      $('#full-video').css("left", "-39vh");
+      $('#full-video').css("right", "-39vh");
+    	cleanUp(); 
+      return video.unbind; 
+    });
+    video.bind("cancelfullscreen", function() { 
+      $('#ratio-box').css("height", "100%");
+      $('#full-video').css("width", "178vh");
+      $('#full-video').css("left", "-39vh");
+      $('#full-video').css("right", "-39vh");
+    	var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      if (isIOS) {
+          $('#hero-content').css("display", "block");
+          $('#hero-content').css("opacity", "1");
+          video.pause();
+          cleanUp(); 
+      }
+      return video.unbind; 
+    });
+    /*
+    $(document).on('click', '.wistia-embed video', function() {
+    console.log("click ");
+    	$('#hero-content').toggleClass('show');
+    });
+     */
+}});
+</script>
+        </div>
+      </div>
+    </div>
+    <div id="hero-content" data-w-id="1c5ee218-394c-7bcf-6238-fae03b796a1a" style="opacity:1;display:flex" class="hero-content">
+      <div class="div-block-37">
+        <a href="https://app.therealworld.ai/chat" class="link-3 btn">LOG IN</a>
+        <a href="support.html" class="link-3 btn">SUPPORT</a>
+      </div>
+      <div class="container _w-padding full-h">
+        <div class="div-block-49"><img src="images/Mask-group_1Mask-group.webp" loading="lazy" sizes="(max-width: 479px) 86vw, (max-width: 767px) 30vw, 20vw" srcset="images/Mask-group_1-p-500.png 500w, images/Mask-group_1Mask-group.webp 517w" alt="The Real World logo" class="image-8"><img src="images/23.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 40vw, 27vw" srcset="images/23-p-500.png 500w, images/23.webp 500w" alt="" class="image-20"></div>
+        <div class="div-block-16">
+          <h1 class="heading-3">THE <span class="text-span-4">REAL WORLD</span></h1>
+          <div class="sub-header">Click to Play THE VIDEO</div>
+          <div id="hero-play" data-w-id="23a29fd5-74a2-4fd1-74ca-bee5386926cc" class="html-embed-3 w-embed">
+            <?xml version="1.0" ?><svg fill="inherit" height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23Z" fill="currentColor" fill-rule="evenodd"></path>
+              <path d="M16 12L10 16.3301V7.66987L16 12Z" fill="currentColor"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="div-block-17"></div>
+      </div>
+    </div>
+    <a id="scroll" href="#what-is-the-real-world" class="div-block-8 w-inline-block">
+      <div class="div-block-9">
+        <div class="html-embed-4 left w-embed">
+          <?xml version="1.0" ?><svg viewbox="0 0 20 20" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+          </svg>
+        </div>
+        <div class="sub-header small">Scroll Down</div>
+        <div class="html-embed-4 right w-embed">
+          <?xml version="1.0" ?><svg viewbox="0 0 20 20" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+          </svg>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="section-3 wf-section">
+    <div class="matrix-bg"></div>
+    <div class="dark-fade"></div>
+    <div class="dark-fade bottom _10perc-bottom"></div>
+    <div class="container small">
+      <div id="what-is-the-real-world" class="what-is-section">
+        <div class="h2-container">
+          <h2 class="h2 white-text"><span class="text-span-7">WHAT IS</span> <span class="text-span-6">THE REAL WORLD?</span></h2>
+          <div class="h2-line"></div>
+        </div>
+        <p class="white-text">The Real World is a global community of like-minded individuals striving to acquire an abundance of wealth.</p>
+        <p class="white-text">We provide our members with advanced education and mentoring from multimillionaire experts.</p>
+        <p class="white-text">Our fully independent learning platform is designed to break people free from the Matrix.</p>
+        <div class="cta-container">
+          <div class="btn-container">
+            <a href="#the-choice-is-yours" class="cta glow-cta w-button">JOIN NOW</a>
+            <div class="cta-back-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-12 wf-section">
+    <div class="container">
+      <div class="container__padding">
+        <div class="what-is__grid">
+          <div class="div-block-20-copy">
+            <div id="w-node-_1b99b79c-82bb-447e-3c72-258f3994b8d9-d93e22c6" class="h2-container">
+              <h2 class="h2 left">WHAT IS OUR PLAN?</h2>
+              <div class="h2-line left"></div>
+            </div>
+            <p class="paragraph-3">The Real World is part of a 3-Step Plan.</p>
+            <p class="last"><strong>Step 1</strong> was creating <strong>Hustler&#x27;s University</strong>: a money-making platform that thrived with 150.000 students in the heart of The Matrix.</p>
+          </div>
+          <div id="w-node-f737a998-88fc-6155-a24f-b1ece964d4ab-d93e22c6" class="what-is__img-container"><img src="images/hu-img-final-compressed_1hu-img-final-compressed.webp" loading="lazy" width="600.5" sizes="(max-width: 479px) 92vw, (max-width: 767px) 86vw, (max-width: 991px) 44vw, 45vw" srcset="images/hu-img-final-compressed_1-p-500.jpg 500w, images/hu-img-final-compressed_1-p-800.jpg 800w, images/hu-img-final-compressed_1-p-1080.jpg 1080w, images/hu-img-final-compressed_1hu-img-final-compressed.webp 1163w" alt="HU logo with matrix background" class="image-9-copy"><img src="images/36.webp" loading="lazy" sizes="(max-width: 479px) 77vw, 170px" srcset="images/36-p-500.png 500w, images/36.webp 500w" alt="" class="image-18"></div>
+          <div id="w-node-_13966b9f-4e6c-acb1-2649-f767a8b11d43-d93e22c6" class="what-is__img-container"><img src="images/tate-img-shine-compressed_1tate-img-shine-compressed.webp" loading="lazy" width="600.5" sizes="(max-width: 479px) 92vw, (max-width: 767px) 86vw, (max-width: 991px) 44vw, 45vw" srcset="images/tate-img-shine-compressed_1-p-500.jpg 500w, images/tate-img-shine-compressed_1-p-800.jpg 800w, images/tate-img-shine-compressed_1-p-1080.jpg 1080w, images/tate-img-shine-compressed_1tate-img-shine-compressed.webp 1388w" alt="Tate with The Real World Logo" class="image-9-copy"><img src="images/31.webp" loading="lazy" sizes="(max-width: 479px) 83vw, 270px" srcset="images/31-p-500.png 500w, images/31.webp 500w" alt="" class="image-17"></div>
+          <div class="div-block-21">
+            <p>Now, <strong>Step 2</strong> is The Real World.</p>
+            <p>And what is it about?</p>
+            <p><strong>MASS EXODUS</strong>.</p>
+            <p>We offer you the chance to join us and break free from the Matrix in an entirely new and independent platform.</p>
+            <p class="last">We call this place The Real World, a safe harbor for ambitious individuals aspiring for financial freedom and eager to learn from us.</p>
+          </div>
+        </div>
+        <div class="cta-container">
+          <div class="btn-container">
+            <a href="#the-choice-is-yours" class="cta white-text w-button">JOIN NOW</a>
+          </div>
+        </div>
+        <div class="div-block-28"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section-4 wf-section">
+    <div class="container">
+      <div class="container__padding"><img src="images/28.webp" loading="lazy" sizes="(max-width: 479px) 69vw, 110px" srcset="images/28-p-500.png 500w, images/28.webp 500w" alt="" class="image-21">
+        <div class="div-block-22">
+          <div class="div-block-20-copy">
+            <div id="w-node-e4a39db9-162b-f806-97eb-b59bc65ceaff-d93e22c6" class="h2-container">
+              <h2 class="h2 left white-text">OUR TEACHING PHILOSOPHY</h2>
+              <div class="h2-line left"></div>
+            </div>
+            <p class="text-white">Our members learn to make money while making money.</p>
+            <p class="white-text">Once you&#x27;re inside, we&#x27;ll immediately focus on making you earn your first profits and then keep compounding on your success over time.</p>
+            <div class="cta-container left desk">
+              <div class="btn-container">
+                <a href="#the-choice-is-yours" class="cta glow-cta w-button">JOIN NOW</a>
+                <div class="cta-back-glow"></div>
+              </div>
+            </div>
+          </div>
+          <div id="w-node-_966f4cba-c0bc-3f2d-475d-e714cf83e0fc-d93e22c6" class="slider-container">
+            <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
+              <div class="mask w-slider-mask">
+                <div class="slide w-slide">
+                  <div class="slide-wrapper">
+                    <a href="#" class="slide-lb w-inline-block w-lightbox"><img src="images/1_11.webp" loading="eager" sizes="(max-width: 479px) 100vw, (max-width: 767px) 86vw, (max-width: 991px) 44vw, 45vw" srcset="images/1_1-p-500.jpg 500w, images/1_11.webp 649w" alt="Progress Win - June 11th" class="slide-image">
+                      <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "1.jpg",
+      "fileName": "1.jpg",
+      "fileSize": 54678,
+      "height": 637,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637137b0b48c4751f6bce94d_1.jpg",
+      "width": 649,
+      "type": "image"
+    }
+  ],
+  "group": "Progress Wins"
+}</script>
+                    </a>
+                    <div>
+                      <div class="date-text">Day 1</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide w-slide">
+                  <div class="slide-wrapper">
+                    <a href="#" class="slide-lb w-inline-block w-lightbox"><img src="images/2_12.webp" loading="eager" sizes="(max-width: 479px) 100vw, (max-width: 767px) 86vw, (max-width: 991px) 44vw, 45vw" srcset="images/2_1-p-500.jpg 500w, images/2_12.webp 649w" alt="Progress Win - June 12th" class="slide-image">
+                      <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2.jpg",
+      "fileName": "2.jpg",
+      "fileSize": 68037,
+      "height": 637,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637137b1b48c472c56bce94f_2.jpg",
+      "width": 649,
+      "type": "image"
+    }
+  ],
+  "group": "Progress Wins"
+}</script>
+                    </a>
+                    <div>
+                      <div class="date-text">Day 2</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide w-slide">
+                  <div class="slide-wrapper">
+                    <a href="#" class="slide-lb w-inline-block w-lightbox"><img src="images/3_13.webp" loading="eager" sizes="(max-width: 479px) 100vw, (max-width: 767px) 86vw, (max-width: 991px) 44vw, 45vw" srcset="images/3_1-p-500.jpg 500w, images/3_13.webp 649w" alt="Progress Win - June 17th" class="slide-image">
+                      <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "3.jpg",
+      "fileName": "3.jpg",
+      "fileSize": 62613,
+      "height": 637,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637137b101967324c6c562ed_3.jpg",
+      "width": 649,
+      "type": "image"
+    }
+  ],
+  "group": "Progress Wins"
+}</script>
+                    </a>
+                    <div>
+                      <div class="date-text">Day 7</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide w-slide">
+                  <div class="slide-wrapper">
+                    <a href="#" class="slide-lb w-inline-block w-lightbox"><img src="images/4_14.webp" loading="eager" sizes="(max-width: 479px) 100vw, (max-width: 767px) 86vw, (max-width: 991px) 44vw, 45vw" srcset="images/4_1-p-500.jpg 500w, images/4_14.webp 649w" alt="Progress Win - June 23th" class="slide-image">
+                      <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "4.jpg",
+      "fileName": "4.jpg",
+      "fileSize": 103821,
+      "height": 637,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637137b11316251b4e0399fe_4.jpg",
+      "width": 649,
+      "type": "image"
+    }
+  ],
+  "group": "Progress Wins"
+}</script>
+                    </a>
+                    <div class="div-block-33">
+                      <div class="date-text">Day 13</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="left-arrow w-slider-arrow-left">
+                <div class="icon-2 w-icon-slider-left"></div>
+              </div>
+              <div class="right-arrow w-slider-arrow-right">
+                <div class="icon w-icon-slider-right"></div>
+              </div>
+              <div class="slide-nav w-slider-nav w-round"></div>
+            </div>
+          </div>
+          <div class="cta-container mobile">
+            <div class="btn-container">
+              <a href="#the-choice-is-yours" class="cta glow-cta w-button">JOIN NOW</a>
+              <div class="cta-back-glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skills" class="section-5 wf-section">
+    <div class="container">
+      <div class="container__padding">
+        <div class="div-block-23">
+          <div class="h2-container">
+            <h2 class="h2">WHAT DO WE TEACH?</h2>
+            <div class="h2-line"></div>
+          </div>
+          <p class="small-margin-p centered">We&#x27;ll train you to build a large income at speed, then you’ll be taught to multiply it and manage it.</p>
+        </div>
+        <div class="skill-block__container"><img src="images/35.webp" loading="lazy" id="w-node-_8fdbdbdd-b8db-1b30-82d0-8ff65b2db11d-d93e22c6" alt="" class="image-22">
+          <div class="skill-block__top">
+            <div class="skill-block__title__container">
+              <div class="skill-block__number__wrapper">
+                <div class="skill-block__number">1</div>
+                <div data-w-id="7a17fa89-a39c-3fd0-1a4c-33380e5ab911" class="skill-block__ring"></div>
+              </div>
+              <div class="skill-block__title__wrapper">
+                <h3 class="h3">CHOOSE A SKILL</h3>
+              </div>
+            </div>
+            <div class="div-block-27">
+              <div class="skill-block__top__bg"></div>
+            </div>
+          </div>
+          <div class="skill-block__bottom">
+            <div class="skill-block__bg"></div>
+            <div id="w-node-_13be3b45-cf4c-89bd-71a1-a0fea873ce75-d93e22c6" class="div-block-24">
+              <p class="small-margin-p">Upon joining, we’ll start you with one of 5 business models that are:</p>
+              <ul role="list" class="list">
+                <li>
+                  <p class="small-margin-p list-item">Completely online</p>
+                </li>
+                <li>
+                  <p class="small-margin-p list-item">Powered by AI technology</p>
+                </li>
+                <li>
+                  <p class="small-margin-p list-item">Scalable to a 6-figure income</p>
+                </li>
+              </ul>
+            </div>
+            <div id="w-node-_40c436d7-768f-5419-91ec-db5cc42baede-d93e22c6" class="skills-grid">
+              <a id="w-node-de3ea92a-dc89-8431-2383-8bd39e2f819d-d93e22c6" href="/skills/copywriting" class="w-inline-block"><img src="images/copy.svg" loading="lazy" id="w-node-e7b196cf-1152-8e7d-87a7-949d9c060ce2-d93e22c6" alt="button with copywriting icon" class="skill-icon">
+                <div id="btn_copywriting" class="skill-btn__anchor"></div>
+              </a>
+              <a id="w-node-_41892e85-8c5f-0b64-7189-dfb0e4b8e26f-d93e22c6" href="/skills/freelancing" class="w-inline-block"><img src="images/freelance.svg" loading="lazy" id="w-node-_25f50c30-4974-3024-7052-3ba13da97c07-d93e22c6" alt="button with freelance icon" class="skill-icon">
+                <div id="btn_freelancing" class="skill-btn__anchor"></div>
+              </a>
+              <a id="w-node-_3afc1cc6-3afb-06ac-09ff-d2fa386b9724-d93e22c6" href="/skills/e-commerce" class="w-inline-block"><img src="images/ecom.svg" loading="lazy" id="w-node-d6507bb5-430b-6124-81cf-3dcc699dc9c8-d93e22c6" alt="button with e-commerce icon" class="skill-icon">
+                <div id="btn_e-commerce" class="skill-btn__anchor"></div>
+              </a>
+              <a id="w-node-_475422fc-75c1-67c1-90e0-75a9aff062bd-d93e22c6" href="/skills/amazon-fba" class="w-inline-block"><img src="images/Vector.svg" loading="lazy" id="w-node-_921b9320-f882-ee7f-b2b3-4a7e8dc87c89-d93e22c6" alt="button with Amazon FBA icon" class="skill-icon">
+                <div id="btn_amazon-fba" class="skill-btn__anchor"></div>
+              </a>
+              <a id="w-node-_433e9484-60f1-ab60-feb2-6864a6dd90d5-d93e22c6" href="/skills/ai" class="link-block w-inline-block"><img src="images/AI.svg" loading="lazy" id="w-node-fc5b1b6b-c6df-1386-7275-7a7ad0a345b3-d93e22c6" alt="AI Chip" class="skill-icon">
+                <div id="btn_ai" class="skill-btn__anchor"></div>
+              </a>
+              <div id="w-node-f4a9893c-b9e6-3217-eb15-01dc7fb72d39-d93e22c6" class="skill-small-text">(click one to learn more)</div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-block__container middle">
+          <div class="skill-block__top">
+            <div class="skill-block__title__container">
+              <div class="skill-block__number__wrapper">
+                <div class="skill-block__number">2</div>
+                <div class="skill-block__ring"></div>
+              </div>
+              <div class="skill-block__title__wrapper">
+                <h3 class="h3">MULTIPLY YOUR INCOME</h3>
+              </div>
+            </div>
+            <div class="div-block-27">
+              <div class="skill-block__top__bg"></div>
+            </div>
+          </div>
+          <div class="skill-block__bottom">
+            <div class="skill-block__bg"></div>
+            <div id="w-node-_93d16f64-17e0-6124-efc8-7a9ae6b56f05-d93e22c6" class="div-block-24">
+              <p class="small-margin-p last">Once we have you reach the 6-figures threshold, we begin to teach you investment strategies to multiply your profits.</p>
+            </div>
+            <div id="w-node-_8f486510-7f94-398c-521b-2fea4b31b5d5-d93e22c6" class="skills-grid _2">
+              <a id="w-node-_29071649-96e1-d13a-e85f-ea47cfba6e7d-d93e22c6" href="/skills/crypto" class="w-inline-block"><img src="images/crypto.svg" loading="lazy" id="w-node-_8f486510-7f94-398c-521b-2fea4b31b5d6-d93e22c6" alt="button with crypto icon" class="skill-icon">
+                <div id="btn_crypto" class="skill-btn__anchor"></div>
+              </a>
+              <a id="w-node-_866c7c24-9cbf-3435-cc2f-115175707607-d93e22c6" href="/skills/stocks" class="w-inline-block"><img src="images/Stock.svg" loading="lazy" id="w-node-_8f486510-7f94-398c-521b-2fea4b31b5d7-d93e22c6" alt="button with stocks icon" class="skill-icon">
+                <div id="btn_stocks" class="skill-btn__anchor"></div>
+              </a>
+              <div id="w-node-a0eb6db2-0802-4778-fe3f-5d53770a805a-d93e22c6" class="skill-small-text">(click one to learn more)</div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-block__container bottom last">
+          <div class="skill-block__top">
+            <div class="skill-block__title__container">
+              <div class="skill-block__number__wrapper">
+                <div class="skill-block__number">3</div>
+                <div class="skill-block__ring"></div>
+              </div>
+              <div class="skill-block__title__wrapper">
+                <h3 class="h3">SCALE YOUR BUSINESS</h3>
+              </div>
+            </div>
+            <div class="div-block-27">
+              <div class="skill-block__top__bg"></div>
+            </div>
+          </div>
+          <div class="skill-block__bottom">
+            <div class="skill-block__bg"></div>
+            <div id="w-node-_5de24a6f-ec7b-db6d-1608-7f8e759be82e-d93e22c6" class="div-block-24">
+              <p class="small-margin-p last">The final step is mentoring you on how to fine-tune your operations and accelerate your business growth.</p>
+            </div>
+            <div id="w-node-d2e46f46-3aa3-bf2a-9bd5-0d76c4ed5a4e-d93e22c6" class="skills-grid _3">
+              <a id="w-node-_18e96ea7-7076-33bb-81a4-9833b8d06180-d93e22c6" href="/skills/business-finance" class="w-inline-block"><img src="images/financ.svg" loading="lazy" id="w-node-d2e46f46-3aa3-bf2a-9bd5-0d76c4ed5a4f-d93e22c6" alt="button with business and finance icon" class="skill-icon">
+                <div id="btn_business-finance" class="skill-btn__anchor"></div>
+              </a>
+              <a id="w-node-_54fa15a4-7bdd-682b-b4e4-4a17810bb283-d93e22c6" href="/skills/mindset" class="w-inline-block"><img src="images/Mindset.svg" loading="lazy" id="w-node-d2e46f46-3aa3-bf2a-9bd5-0d76c4ed5a50-d93e22c6" alt="button with mindset icon" class="skill-icon">
+                <div id="btn_mindset" class="skill-btn__anchor"></div>
+              </a>
+              <div id="w-node-db6144d0-3774-8a21-110b-9bb17cc531de-d93e22c6" class="skill-small-text">(click one to learn more)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-5 wf-section">
+    <div class="container">
+      <div class="container__padding">
+        <div class="div-block-20">
+          <div class="professors__container">
+            <div id="w-node-e8d3a2df-2dc4-5727-bf86-0710c5d3ae1d-d93e22c6" class="professors__grid">
+              <div id="w-node-_752987c2-d5f3-ce89-13fa-cbef99ea155e-d93e22c6" class="professor__item"><img src="images/a912d10e9cdc35788801463bb33d831c_1a912d10e9cdc35788801463bb33d831c.webp" loading="lazy" alt="Professor Andrew" class="image-10">
+                <div class="professor__name__container">
+                  <p class="white-text no-margin">Andrew</p>
+                  <p class="highlight-p no-margin">Copywriting</p>
+                </div>
+              </div>
+              <div id="w-node-_3a95f6e2-81fc-afcf-7119-3625450897a7-d93e22c6" class="professor__item"><img src="images/245fe3652c9a7594b67acac4f2561b47_1245fe3652c9a7594b67acac4f2561b47.webp" loading="lazy" alt="Professor Dylan" class="image-10">
+                <div class="professor__name__container">
+                  <p class="white-text no-margin">Dylan</p>
+                  <p class="highlight-p no-margin">Freelancing</p>
+                </div>
+              </div>
+              <div id="w-node-_5163b568-1d5b-cc73-5a0a-24ef5208f28a-d93e22c6" class="professor__item"><img src="images/6647061ace23ef920d01099bcb339852_16647061ace23ef920d01099bcb339852.webp" loading="lazy" alt="Professor Shuayb" class="image-10">
+                <div class="professor__name__container">
+                  <p class="white-text no-margin">Shuayb</p>
+                  <p class="highlight-p no-margin">E-Commerce</p>
+                </div>
+              </div>
+              <div id="w-node-b892739f-d99f-c7b7-43c0-0bf6cae2fa68-d93e22c6" class="professor__item"><img src="images/82f46e94d36063c18ab021f40dab6651_182f46e94d36063c18ab021f40dab6651.webp" loading="lazy" alt="Professor TJ" class="image-10">
+                <div class="professor__name__container">
+                  <p class="white-text no-margin">TJ</p>
+                  <p class="highlight-p no-margin">Amazon FBA</p>
+                </div>
+              </div>
+              <div id="w-node-_979114e2-7c31-eb69-728c-1c57ea0ef072-d93e22c6" class="professor__item"><img src="images/adam_1adam.webp" loading="lazy" alt="Professor Adam" class="image-10">
+                <div class="professor__name__container">
+                  <p class="white-text no-margin">Adam</p>
+                  <p class="highlight-p no-margin">Crypto</p>
+                </div>
+              </div>
+              <div id="w-node-_39e12a37-83af-2d46-59ca-4713805b320b-d93e22c6" class="professor__item"><img src="images/michael_1michael.webp" loading="lazy" alt="Professor Michael" class="image-10">
+                <div class="professor__name__container">
+                  <p class="white-text no-margin">Michael</p>
+                  <p class="highlight-p no-margin">Crypto</p>
+                </div>
+              </div>
+              <div id="w-node-f81817cd-353d-eae4-1e73-a754a099275f-d93e22c6" class="professor__item"><img src="images/3262eaa98c9080626a1dbdc221105880_13262eaa98c9080626a1dbdc221105880.webp" loading="lazy" alt="Professor Silard" class="image-10">
+                <div class="professor__name__container">
+                  <p class="white-text no-margin">Silard</p>
+                  <p class="highlight-p no-margin">NFT</p>
+                </div>
+              </div>
+              <div id="w-node-_710546ca-10ea-60a1-4997-2521ed63dd3a-d93e22c6" class="professor__item"><img src="images/bd749b6ab98f259e4922bf6bfa25c949_1bd749b6ab98f259e4922bf6bfa25c949.webp" loading="lazy" alt="Professor Aayush" class="image-10">
+                <div class="professor__name__container">
+                  <p class="white-text no-margin">Aayush</p>
+                  <p class="highlight-p no-margin">Stocks</p>
+                </div>
+              </div>
+              <div id="w-node-a8a0f728-31c6-6fd1-15a7-41ccd9ae0399-d93e22c6" class="professor__item"><img src="images/4142922f644f4b72eb050e1c000a788f_14142922f644f4b72eb050e1c000a788f.webp" loading="lazy" alt="Professor Arno" class="image-10">
+                <div class="professor__name__container">
+                  <p class="white-text no-margin">Arno</p>
+                  <p class="highlight-p no-margin">Personal Finance</p>
+                </div>
+              </div>
+            </div>
+            <div id="w-node-_32463f6f-47c1-5b98-d075-0e64d40a04b7-d93e22c6" class="div-block-32">
+              <div id="w-node-c889f256-335b-1eca-f0cb-7cd29582fa87-d93e22c6" class="h2-container">
+                <h2 class="h2 left">OUR INSTRUCTORS</h2>
+                <div class="h2-line left"></div>
+              </div>
+              <p class="paragraph-3">We call our instructors “Professors”, but their teachings come from experience, not theory.</p>
+              <p class="paragraph-3">All of our Professors made well over <strong>$1M in profits</strong> using the methods they teach in The Real World.</p>
+              <p class="last">And their mission is to guide and mentor you throughout your business journey. Every single day.</p>
+              <div class="cta-container left desk">
+                <div class="btn-container">
+                  <a href="#test" class="cta white-text w-button">JOIN NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="w-node-_61bff8ce-45f0-0ad9-38ac-ef008ec5efac-d93e22c6" class="div-block-34"></div>
+          <div class="cta-container mobile">
+            <div class="btn-container">
+              <a href="#the-choice-is-yours" class="cta white-text w-button">JOIN NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-30"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section-3 wf-section">
+    <div class="matrix-bg _2"></div>
+    <div id="test" class="dark-fade _10perc-top"></div>
+    <div class="dark-fade bottom"></div>
+    <div class="container small">
+      <div class="your-choice-section">
+        <div class="h2-container center">
+          <h2 class="h2 white-text">THE CHOICE IS YOURS</h2>
+          <div class="h2-line"></div>
+        </div>
+        <p class="white-text">The Matrix wants you poor, weak, alone, and complacent.</p>
+        <p class="white-text">It&#x27;s time to wake up, Neo.</p>
+        <p class="white-text">We are opening a mass portal to escape slavery.<br><br>We&#x27;ve spent months developing our fully independent platform with our own app, servers, payment processors, banks, and infrastructure.</p>
+        <p class="white-text">We want you to become wealthy, strong, well-connected, and FREE.</p>
+      </div>
+    </div><img src="images/24.webp" loading="lazy" sizes="(max-width: 479px) 100vw, 180px" srcset="images/24-p-500.png 500w, images/24.webp 500w" alt="" class="image-19">
+  </div>
+  <div id="the-choice-is-yours" class="section-6 wf-section">
+    <div class="container">
+      <div class="your-choice__padding">
+        <p class="large-p white-text centered"><strong class="bold-text-12">The choice is yours, Neo.</strong></p>
+        <p class="large-p white-text centered"><strong class="bold-text-12">Do you want to escape or not?</strong></p>
+        <div class="cta-container">
+          <div class="div-block-14">
+            <div class="div-block-13"><img src="images/141.svg" loading="eager" alt="" class="image-6">
+              <a href="https://www.netflix.com/" target="_blank" class="button-2 blue w-button">Go To Netflix</a>
+            </div>
+            <div class="div-block-13"><img src="images/140.svg" loading="eager" alt="" class="image-6">
+              <a href="https://secure.therealworld.ai/checkout" class="button-2 btn w-button">JOIN <span class="text-span-8">THE REAL WORLD</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="50b732a3-9b0f-b9c7-3671-793e5b683ade" class="section-9 wf-section">
+    <div class="win-gallery__sticky-wrapper">
+      <div class="container center">
+        <div class="container__padding top-only">
+          <div class="h2-container">
+            <h2 class="h2">OUR STUDENT&#x27;S WINS</h2>
+            <div class="h2-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="win-gallery">
+        <div class="win-gallery__grid">
+          <div id="w-node-_91d8ee7a-4b9c-efb3-74b0-71e4868d5e5e-d93e22c6" class="win-gallery_column up">
+            <div class="win-gallery_column__1">
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.21.41_12022-11-13-02.21.41.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.21.41_1-p-500.jpg 500w, images/2022-11-13-02.21.41_1-p-800.jpg 800w, images/2022-11-13-02.21.41_12022-11-13-02.21.41.webp 1170w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.21.41.jpg",
+      "fileName": "2022-11-13 02.21.41.jpg",
+      "fileSize": 89792,
+      "height": 1032,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d9f5b03215ffd91e3e_2022-11-13%2002.21.41.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.21.30_12022-11-13-02.21.30.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.21.30_1-p-500.jpg 500w, images/2022-11-13-02.21.30_12022-11-13-02.21.30.webp 771w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.21.30.jpg",
+      "fileName": "2022-11-13 02.21.30.jpg",
+      "fileSize": 87786,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d8e8261ae559211d81_2022-11-13%2002.21.30.jpg",
+      "width": 771,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.22.22_12022-11-13-02.22.22.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.22.22_1-p-500.jpg 500w, images/2022-11-13-02.22.22_1-p-800.jpg 800w, images/2022-11-13-02.22.22_12022-11-13-02.22.22.webp 1170w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.22.22.jpg",
+      "fileName": "2022-11-13 02.22.22.jpg",
+      "fileSize": 58055,
+      "height": 1002,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d8c0a45f3b7080f791_2022-11-13%2002.22.22.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.21.04_12022-11-13-02.21.04.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.21.04_1-p-500.jpg 500w, images/2022-11-13-02.21.04_1-p-800.jpg 800w, images/2022-11-13-02.21.04_12022-11-13-02.21.04.webp 937w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.21.04.jpg",
+      "fileName": "2022-11-13 02.21.04.jpg",
+      "fileSize": 75398,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d8c6f098213bbaf00b_2022-11-13%2002.21.04.jpg",
+      "width": 937,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.19.14_12022-11-13-02.19.14.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.19.14_1-p-500.jpg 500w, images/2022-11-13-02.19.14_1-p-800.jpg 800w, images/2022-11-13-02.19.14_12022-11-13-02.19.14.webp 975w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.19.14.jpg",
+      "fileName": "2022-11-13 02.19.14.jpg",
+      "fileSize": 66658,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d897560d418e355d94_2022-11-13%2002.19.14.jpg",
+      "width": 975,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.20.24_12022-11-13-02.20.24.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.20.24_1-p-500.jpg 500w, images/2022-11-13-02.20.24_1-p-800.jpg 800w, images/2022-11-13-02.20.24_12022-11-13-02.20.24.webp 1170w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.20.24.jpg",
+      "fileName": "2022-11-13 02.20.24.jpg",
+      "fileSize": 48829,
+      "height": 931,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d8c83b01a421218933_2022-11-13%2002.20.24.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.20.47_12022-11-13-02.20.47.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.20.47_1-p-500.jpg 500w, images/2022-11-13-02.20.47_1-p-800.jpg 800w, images/2022-11-13-02.20.47_12022-11-13-02.20.47.webp 966w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.20.47.jpg",
+      "fileName": "2022-11-13 02.20.47.jpg",
+      "fileSize": 47336,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d8352a0073d2db6e91_2022-11-13%2002.20.47.jpg",
+      "width": 966,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.16.12_12022-11-13-02.16.12.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.16.12_1-p-500.jpg 500w, images/2022-11-13-02.16.12_12022-11-13-02.16.12.webp 895w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.16.12.jpg",
+      "fileName": "2022-11-13 02.16.12.jpg",
+      "fileSize": 53573,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d870c1253b940fc60c_2022-11-13%2002.16.12.jpg",
+      "width": 895,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.18.49_12022-11-13-02.18.49.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.18.49_1-p-500.jpg 500w, images/2022-11-13-02.18.49_1-p-800.jpg 800w, images/2022-11-13-02.18.49_12022-11-13-02.18.49.webp 1170w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.18.49.jpg",
+      "fileName": "2022-11-13 02.18.49.jpg",
+      "fileSize": 47587,
+      "height": 931,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d870c12590370fc60b_2022-11-13%2002.18.49.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.15.17_12022-11-13-02.15.17.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.15.17_1-p-500.jpg 500w, images/2022-11-13-02.15.17_1-p-800.jpg 800w, images/2022-11-13-02.15.17_12022-11-13-02.15.17.webp 1170w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.15.17.jpg",
+      "fileName": "2022-11-13 02.15.17.jpg",
+      "fileSize": 35736,
+      "height": 558,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d72f1c499829112639_2022-11-13%2002.15.17.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+            </div>
+          </div>
+          <div id="w-node-_5bca9c81-b664-a7aa-bfbf-2d49e9f2ea88-d93e22c6" class="win-gallery_column down">
+            <div class="win-gallery_column__1">
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.16.01_12022-11-13-02.16.01.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.16.01_1-p-500.jpg 500w, images/2022-11-13-02.16.01_12022-11-13-02.16.01.webp 901w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.16.01.jpg",
+      "fileName": "2022-11-13 02.16.01.jpg",
+      "fileSize": 55342,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d7c83b01e593218932_2022-11-13%2002.16.01.jpg",
+      "width": 901,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.14.57_12022-11-13-02.14.57.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.14.57_1-p-500.jpg 500w, images/2022-11-13-02.14.57_12022-11-13-02.14.57.webp 849w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.14.57.jpg",
+      "fileName": "2022-11-13 02.14.57.jpg",
+      "fileSize": 67893,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d77c79cf520616b58d_2022-11-13%2002.14.57.jpg",
+      "width": 849,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.14.53_12022-11-13-02.14.53.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.14.53_1-p-500.jpg 500w, images/2022-11-13-02.14.53_12022-11-13-02.14.53.webp 926w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.14.53.jpg",
+      "fileName": "2022-11-13 02.14.53.jpg",
+      "fileSize": 78149,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d7f1353404fb4d10d7_2022-11-13%2002.14.53.jpg",
+      "width": 926,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.07.09_12022-11-13-02.07.09.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.07.09_1-p-500.jpg 500w, images/2022-11-13-02.07.09_12022-11-13-02.07.09.webp 788w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.07.09.jpg",
+      "fileName": "2022-11-13 02.07.09.jpg",
+      "fileSize": 70626,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d72c1bdeec6d0aee4d_2022-11-13%2002.07.09.jpg",
+      "width": 788,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.14.48_12022-11-13-02.14.48.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.14.48_1-p-500.jpg 500w, images/2022-11-13-02.14.48_1-p-800.jpg 800w, images/2022-11-13-02.14.48_12022-11-13-02.14.48.webp 1170w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.14.48.jpg",
+      "fileName": "2022-11-13 02.14.48.jpg",
+      "fileSize": 37059,
+      "height": 507,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d7c4acf8e79c9f0b4c_2022-11-13%2002.14.48.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.06.42_12022-11-13-02.06.42.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.06.42_1-p-500.jpg 500w, images/2022-11-13-02.06.42_1-p-800.jpg 800w, images/2022-11-13-02.06.42_12022-11-13-02.06.42.webp 1007w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.06.42.jpg",
+      "fileName": "2022-11-13 02.06.42.jpg",
+      "fileSize": 62025,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d7583e4ed000fca339_2022-11-13%2002.06.42.jpg",
+      "width": 1007,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.03.27_12022-11-13-02.03.27.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.03.27_1-p-500.jpg 500w, images/2022-11-13-02.03.27_1-p-800.jpg 800w, images/2022-11-13-02.03.27_12022-11-13-02.03.27.webp 1170w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.03.27.jpg",
+      "fileName": "2022-11-13 02.03.27.jpg",
+      "fileSize": 43577,
+      "height": 611,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d73efa2c3a423bf5ef_2022-11-13%2002.03.27.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.02.48_12022-11-13-02.02.48.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.02.48_1-p-500.jpg 500w, images/2022-11-13-02.02.48_1-p-800.jpg 800w, images/2022-11-13-02.02.48_12022-11-13-02.02.48.webp 1170w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.02.48.jpg",
+      "fileName": "2022-11-13 02.02.48.jpg",
+      "fileSize": 34460,
+      "height": 697,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d62c1bdedf580aee4c_2022-11-13%2002.02.48.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.02.45_12022-11-13-02.02.45.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.02.45_1-p-500.jpg 500w, images/2022-11-13-02.02.45_12022-11-13-02.02.45.webp 926w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.02.45.jpg",
+      "fileName": "2022-11-13 02.02.45.jpg",
+      "fileSize": 69738,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d697560d9e14355d71_2022-11-13%2002.02.45.jpg",
+      "width": 926,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.03.10_12022-11-13-02.03.10.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.03.10_1-p-500.jpg 500w, images/2022-11-13-02.03.10_12022-11-13-02.03.10.webp 929w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.03.10.jpg",
+      "fileName": "2022-11-13 02.03.10.jpg",
+      "fileSize": 56863,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6996742d6ed0b8de4_2022-11-13%2002.03.10.jpg",
+      "width": 929,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+            </div>
+          </div>
+          <div id="w-node-ae190cdc-06e9-5460-f341-7e48b743f33c-d93e22c6" class="win-gallery_column up _3">
+            <div class="win-gallery_column__1">
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.02.28_12022-11-13-02.02.28.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.02.28_1-p-500.jpg 500w, images/2022-11-13-02.02.28_1-p-800.jpg 800w, images/2022-11-13-02.02.28_12022-11-13-02.02.28.webp 1170w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.02.28.jpg",
+      "fileName": "2022-11-13 02.02.28.jpg",
+      "fileSize": 34127,
+      "height": 487,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6b673f1d81854442b_2022-11-13%2002.02.28.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.01.13_12022-11-13-02.01.13.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.01.13_1-p-500.jpg 500w, images/2022-11-13-02.01.13_12022-11-13-02.01.13.webp 768w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.01.13.jpg",
+      "fileName": "2022-11-13 02.01.13.jpg",
+      "fileSize": 50425,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6352a009f32db6e7d_2022-11-13%2002.01.13.jpg",
+      "width": 768,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.02.41_12022-11-13-02.02.41.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.02.41_1-p-500.jpg 500w, images/2022-11-13-02.02.41_1-p-800.jpg 800w, images/2022-11-13-02.02.41_12022-11-13-02.02.41.webp 1000w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.02.41.jpg",
+      "fileName": "2022-11-13 02.02.41.jpg",
+      "fileSize": 89219,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6d81a9fed631b0bb7_2022-11-13%2002.02.41.jpg",
+      "width": 1000,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.00.24_12022-11-13-02.00.24.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.00.24_1-p-500.jpg 500w, images/2022-11-13-02.00.24_1-p-800.jpg 800w, images/2022-11-13-02.00.24_12022-11-13-02.00.24.webp 1170w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.00.24.jpg",
+      "fileName": "2022-11-13 02.00.24.jpg",
+      "fileSize": 49040,
+      "height": 941,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6e8261a3219211d49_2022-11-13%2002.00.24.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.00.32_12022-11-13-02.00.32.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.00.32_1-p-500.jpg 500w, images/2022-11-13-02.00.32_12022-11-13-02.00.32.webp 769w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.00.32.jpg",
+      "fileName": "2022-11-13 02.00.32.jpg",
+      "fileSize": 89622,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6eaae7f678395f6db_2022-11-13%2002.00.32.jpg",
+      "width": 769,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.00.36_12022-11-13-02.00.36.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.00.36_1-p-500.jpg 500w, images/2022-11-13-02.00.36_12022-11-13-02.00.36.webp 851w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.00.36.jpg",
+      "fileName": "2022-11-13 02.00.36.jpg",
+      "fileSize": 62545,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6c83b014c382188fd_2022-11-13%2002.00.36.jpg",
+      "width": 851,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.58.26_12022-11-13-01.58.26.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.58.26_1-p-500.jpg 500w, images/2022-11-13-01.58.26_12022-11-13-01.58.26.webp 537w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.58.26.jpg",
+      "fileName": "2022-11-13 01.58.26.jpg",
+      "fileSize": 23790,
+      "height": 488,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d52f1c498c8e11262d_2022-11-13%2001.58.26.jpg",
+      "width": 537,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.58.20_12022-11-13-01.58.20.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.58.20_1-p-500.jpg 500w, images/2022-11-13-01.58.20_12022-11-13-01.58.20.webp 657w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.58.20.jpg",
+      "fileName": "2022-11-13 01.58.20.jpg",
+      "fileSize": 21504,
+      "height": 680,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d549a24898fef5c5f5_2022-11-13%2001.58.20.jpg",
+      "width": 657,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.56.11_12022-11-13-01.56.11.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.56.11_1-p-500.jpg 500w, images/2022-11-13-01.56.11_12022-11-13-01.56.11.webp 713w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.56.11.jpg",
+      "fileName": "2022-11-13 01.56.11.jpg",
+      "fileSize": 14431,
+      "height": 287,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d57c79cf6c1f16b576_2022-11-13%2001.56.11.jpg",
+      "width": 713,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.55.49_12022-11-13-01.55.49.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.55.49_1-p-500.jpg 500w, images/2022-11-13-01.55.49_12022-11-13-01.55.49.webp 846w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.55.49.jpg",
+      "fileName": "2022-11-13 01.55.49.jpg",
+      "fileSize": 29540,
+      "height": 412,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d52c1bde96e50aee35_2022-11-13%2001.55.49.jpg",
+      "width": 846,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+            </div>
+          </div>
+          <div id="w-node-b41eb281-36ac-5118-243e-ddaf59d7608e-d93e22c6" class="win-gallery_column down _4">
+            <div class="win-gallery_column__1">
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.57.16_12022-11-13-01.57.16.webp" loading="lazy" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.57.16.jpg",
+      "fileName": "2022-11-13 01.57.16.jpg",
+      "fileSize": 22759,
+      "height": 589,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d5adeb72622845b63c_2022-11-13%2001.57.16.jpg",
+      "width": 469,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.55.02_12022-11-13-01.55.02.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.55.02_1-p-500.jpg 500w, images/2022-11-13-01.55.02_12022-11-13-01.55.02.webp 552w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.55.02.jpg",
+      "fileName": "2022-11-13 01.55.02.jpg",
+      "fileSize": 20011,
+      "height": 681,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d52c1bde0b370aee34_2022-11-13%2001.55.02.jpg",
+      "width": 552,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.53.58_12022-11-13-01.53.58.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.53.58_1-p-500.jpg 500w, images/2022-11-13-01.53.58_1-p-800.jpg 800w, images/2022-11-13-01.53.58_12022-11-13-01.53.58.webp 971w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.53.58.jpg",
+      "fileName": "2022-11-13 01.53.58.jpg",
+      "fileSize": 65108,
+      "height": 643,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d52c1bde5b7b0aee24_2022-11-13%2001.53.58.jpg",
+      "width": 971,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.53.45_12022-11-13-01.53.45.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.53.45_1-p-500.jpg 500w, images/2022-11-13-01.53.45_12022-11-13-01.53.45.webp 731w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.53.45.jpg",
+      "fileName": "2022-11-13 01.53.45.jpg",
+      "fileSize": 14565,
+      "height": 225,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d5ac3bfcd4de7e4eee_2022-11-13%2001.53.45.jpg",
+      "width": 731,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.55.43_12022-11-13-01.55.43.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.55.43_1-p-500.jpg 500w, images/2022-11-13-01.55.43_12022-11-13-01.55.43.webp 643w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.55.43.jpg",
+      "fileName": "2022-11-13 01.55.43.jpg",
+      "fileSize": 17039,
+      "height": 316,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d575bd37e62b1e305c_2022-11-13%2001.55.43.jpg",
+      "width": 643,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.53.40_12022-11-13-01.53.40.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.53.40_1-p-500.jpg 500w, images/2022-11-13-01.53.40_12022-11-13-01.53.40.webp 707w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.53.40.jpg",
+      "fileName": "2022-11-13 01.53.40.jpg",
+      "fileSize": 22965,
+      "height": 579,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d4352a00af0ddb6e34_2022-11-13%2001.53.40.jpg",
+      "width": 707,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.52.16_12022-11-13-01.52.16.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.52.16_1-p-500.jpg 500w, images/2022-11-13-01.52.16_1-p-800.jpg 800w, images/2022-11-13-01.52.16_1-p-1080.jpg 1080w, images/2022-11-13-01.52.16_12022-11-13-01.52.16.webp 1280w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.52.16.jpg",
+      "fileName": "2022-11-13 01.52.16.jpg",
+      "fileSize": 64672,
+      "height": 952,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d42f1c493f9211262b_2022-11-13%2001.52.16.jpg",
+      "width": 1280,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.52.12_12022-11-13-01.52.12.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.52.12_1-p-500.jpg 500w, images/2022-11-13-01.52.12_1-p-800.jpg 800w, images/2022-11-13-01.52.12_12022-11-13-01.52.12.webp 1236w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.52.12.jpg",
+      "fileName": "2022-11-13 01.52.12.jpg",
+      "fileSize": 42529,
+      "height": 600,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d46cfab65d10c87a94_2022-11-13%2001.52.12.jpg",
+      "width": 1236,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.53.36_12022-11-13-01.53.36.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.53.36_1-p-500.jpg 500w, images/2022-11-13-01.53.36_12022-11-13-01.53.36.webp 631w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.53.36.jpg",
+      "fileName": "2022-11-13 01.53.36.jpg",
+      "fileSize": 17068,
+      "height": 435,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d4c4acf870869f0ad3_2022-11-13%2001.53.36.jpg",
+      "width": 631,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+              <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.52.06_12022-11-13-01.52.06.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.52.06_1-p-500.jpg 500w, images/2022-11-13-01.52.06_1-p-800.jpg 800w, images/2022-11-13-01.52.06_1-p-1080.jpg 1080w, images/2022-11-13-01.52.06_12022-11-13-01.52.06.webp 1230w" alt="" class="gallery-image">
+                <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.52.06.jpg",
+      "fileName": "2022-11-13 01.52.06.jpg",
+      "fileSize": 33457,
+      "height": 506,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d48a031be272554450_2022-11-13%2001.52.06.jpg",
+      "width": 1230,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta-container win-g">
+      <div class="btn-container">
+        <a href="#the-choice-is-yours" class="cta white-text w-button">JOIN NOW</a>
+      </div>
+    </div>
+  </div>
+  <div class="section-10 wf-section">
+    <div class="container center">
+      <div class="container__padding">
+        <div class="h2-container">
+          <h2 class="h2">OUR STUDENT&#x27;S WINS</h2>
+          <div class="h2-line"></div>
+        </div>
+        <div class="gallery-container">
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.21.41_12022-11-13-02.21.41.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.21.41_1-p-500.jpg 500w, images/2022-11-13-02.21.41_1-p-800.jpg 800w, images/2022-11-13-02.21.41_12022-11-13-02.21.41.webp 1170w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.21.41.jpg",
+      "fileName": "2022-11-13 02.21.41.jpg",
+      "fileSize": 89792,
+      "height": 1032,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d9f5b03215ffd91e3e_2022-11-13%2002.21.41.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.21.30_12022-11-13-02.21.30.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.21.30_1-p-500.jpg 500w, images/2022-11-13-02.21.30_12022-11-13-02.21.30.webp 771w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.21.30.jpg",
+      "fileName": "2022-11-13 02.21.30.jpg",
+      "fileSize": 87786,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d8e8261ae559211d81_2022-11-13%2002.21.30.jpg",
+      "width": 771,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.22.22_12022-11-13-02.22.22.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.22.22_1-p-500.jpg 500w, images/2022-11-13-02.22.22_1-p-800.jpg 800w, images/2022-11-13-02.22.22_12022-11-13-02.22.22.webp 1170w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.22.22.jpg",
+      "fileName": "2022-11-13 02.22.22.jpg",
+      "fileSize": 58055,
+      "height": 1002,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d8c0a45f3b7080f791_2022-11-13%2002.22.22.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.21.04_12022-11-13-02.21.04.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.21.04_1-p-500.jpg 500w, images/2022-11-13-02.21.04_1-p-800.jpg 800w, images/2022-11-13-02.21.04_12022-11-13-02.21.04.webp 937w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.21.04.jpg",
+      "fileName": "2022-11-13 02.21.04.jpg",
+      "fileSize": 75398,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d8c6f098213bbaf00b_2022-11-13%2002.21.04.jpg",
+      "width": 937,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.19.14_12022-11-13-02.19.14.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.19.14_1-p-500.jpg 500w, images/2022-11-13-02.19.14_1-p-800.jpg 800w, images/2022-11-13-02.19.14_12022-11-13-02.19.14.webp 975w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.19.14.jpg",
+      "fileName": "2022-11-13 02.19.14.jpg",
+      "fileSize": 66658,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d897560d418e355d94_2022-11-13%2002.19.14.jpg",
+      "width": 975,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.20.24_12022-11-13-02.20.24.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.20.24_1-p-500.jpg 500w, images/2022-11-13-02.20.24_1-p-800.jpg 800w, images/2022-11-13-02.20.24_12022-11-13-02.20.24.webp 1170w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.20.24.jpg",
+      "fileName": "2022-11-13 02.20.24.jpg",
+      "fileSize": 48829,
+      "height": 931,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d8c83b01a421218933_2022-11-13%2002.20.24.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.20.47_12022-11-13-02.20.47.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.20.47_1-p-500.jpg 500w, images/2022-11-13-02.20.47_1-p-800.jpg 800w, images/2022-11-13-02.20.47_12022-11-13-02.20.47.webp 966w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.20.47.jpg",
+      "fileName": "2022-11-13 02.20.47.jpg",
+      "fileSize": 47336,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d8352a0073d2db6e91_2022-11-13%2002.20.47.jpg",
+      "width": 966,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.16.12_12022-11-13-02.16.12.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.16.12_1-p-500.jpg 500w, images/2022-11-13-02.16.12_12022-11-13-02.16.12.webp 895w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.16.12.jpg",
+      "fileName": "2022-11-13 02.16.12.jpg",
+      "fileSize": 53573,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d870c1253b940fc60c_2022-11-13%2002.16.12.jpg",
+      "width": 895,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.18.49_12022-11-13-02.18.49.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.18.49_1-p-500.jpg 500w, images/2022-11-13-02.18.49_1-p-800.jpg 800w, images/2022-11-13-02.18.49_12022-11-13-02.18.49.webp 1170w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.18.49.jpg",
+      "fileName": "2022-11-13 02.18.49.jpg",
+      "fileSize": 47587,
+      "height": 931,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d870c12590370fc60b_2022-11-13%2002.18.49.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.15.17_12022-11-13-02.15.17.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.15.17_1-p-500.jpg 500w, images/2022-11-13-02.15.17_1-p-800.jpg 800w, images/2022-11-13-02.15.17_12022-11-13-02.15.17.webp 1170w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.15.17.jpg",
+      "fileName": "2022-11-13 02.15.17.jpg",
+      "fileSize": 35736,
+      "height": 558,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d72f1c499829112639_2022-11-13%2002.15.17.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.16.01_12022-11-13-02.16.01.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.16.01_1-p-500.jpg 500w, images/2022-11-13-02.16.01_12022-11-13-02.16.01.webp 901w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.16.01.jpg",
+      "fileName": "2022-11-13 02.16.01.jpg",
+      "fileSize": 55342,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d7c83b01e593218932_2022-11-13%2002.16.01.jpg",
+      "width": 901,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.14.57_12022-11-13-02.14.57.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.14.57_1-p-500.jpg 500w, images/2022-11-13-02.14.57_12022-11-13-02.14.57.webp 849w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.14.57.jpg",
+      "fileName": "2022-11-13 02.14.57.jpg",
+      "fileSize": 67893,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d77c79cf520616b58d_2022-11-13%2002.14.57.jpg",
+      "width": 849,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.14.53_12022-11-13-02.14.53.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.14.53_1-p-500.jpg 500w, images/2022-11-13-02.14.53_12022-11-13-02.14.53.webp 926w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.14.53.jpg",
+      "fileName": "2022-11-13 02.14.53.jpg",
+      "fileSize": 78149,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d7f1353404fb4d10d7_2022-11-13%2002.14.53.jpg",
+      "width": 926,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.07.09_12022-11-13-02.07.09.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.07.09_1-p-500.jpg 500w, images/2022-11-13-02.07.09_12022-11-13-02.07.09.webp 788w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.07.09.jpg",
+      "fileName": "2022-11-13 02.07.09.jpg",
+      "fileSize": 70626,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d72c1bdeec6d0aee4d_2022-11-13%2002.07.09.jpg",
+      "width": 788,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.14.48_12022-11-13-02.14.48.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.14.48_1-p-500.jpg 500w, images/2022-11-13-02.14.48_1-p-800.jpg 800w, images/2022-11-13-02.14.48_12022-11-13-02.14.48.webp 1170w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.14.48.jpg",
+      "fileName": "2022-11-13 02.14.48.jpg",
+      "fileSize": 37059,
+      "height": 507,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d7c4acf8e79c9f0b4c_2022-11-13%2002.14.48.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.06.42_12022-11-13-02.06.42.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.06.42_1-p-500.jpg 500w, images/2022-11-13-02.06.42_1-p-800.jpg 800w, images/2022-11-13-02.06.42_12022-11-13-02.06.42.webp 1007w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.06.42.jpg",
+      "fileName": "2022-11-13 02.06.42.jpg",
+      "fileSize": 62025,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d7583e4ed000fca339_2022-11-13%2002.06.42.jpg",
+      "width": 1007,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.03.27_12022-11-13-02.03.27.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.03.27_1-p-500.jpg 500w, images/2022-11-13-02.03.27_1-p-800.jpg 800w, images/2022-11-13-02.03.27_12022-11-13-02.03.27.webp 1170w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.03.27.jpg",
+      "fileName": "2022-11-13 02.03.27.jpg",
+      "fileSize": 43577,
+      "height": 611,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d73efa2c3a423bf5ef_2022-11-13%2002.03.27.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.02.48_12022-11-13-02.02.48.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.02.48_1-p-500.jpg 500w, images/2022-11-13-02.02.48_1-p-800.jpg 800w, images/2022-11-13-02.02.48_12022-11-13-02.02.48.webp 1170w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.02.48.jpg",
+      "fileName": "2022-11-13 02.02.48.jpg",
+      "fileSize": 34460,
+      "height": 697,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d62c1bdedf580aee4c_2022-11-13%2002.02.48.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.02.45_12022-11-13-02.02.45.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.02.45_1-p-500.jpg 500w, images/2022-11-13-02.02.45_12022-11-13-02.02.45.webp 926w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.02.45.jpg",
+      "fileName": "2022-11-13 02.02.45.jpg",
+      "fileSize": 69738,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d697560d9e14355d71_2022-11-13%2002.02.45.jpg",
+      "width": 926,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.03.10_12022-11-13-02.03.10.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.03.10_1-p-500.jpg 500w, images/2022-11-13-02.03.10_12022-11-13-02.03.10.webp 929w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.03.10.jpg",
+      "fileName": "2022-11-13 02.03.10.jpg",
+      "fileSize": 56863,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6996742d6ed0b8de4_2022-11-13%2002.03.10.jpg",
+      "width": 929,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.02.28_12022-11-13-02.02.28.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.02.28_1-p-500.jpg 500w, images/2022-11-13-02.02.28_1-p-800.jpg 800w, images/2022-11-13-02.02.28_12022-11-13-02.02.28.webp 1170w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.02.28.jpg",
+      "fileName": "2022-11-13 02.02.28.jpg",
+      "fileSize": 34127,
+      "height": 487,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6b673f1d81854442b_2022-11-13%2002.02.28.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.01.13_12022-11-13-02.01.13.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.01.13_1-p-500.jpg 500w, images/2022-11-13-02.01.13_12022-11-13-02.01.13.webp 768w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.01.13.jpg",
+      "fileName": "2022-11-13 02.01.13.jpg",
+      "fileSize": 50425,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6352a009f32db6e7d_2022-11-13%2002.01.13.jpg",
+      "width": 768,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.02.41_12022-11-13-02.02.41.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.02.41_1-p-500.jpg 500w, images/2022-11-13-02.02.41_1-p-800.jpg 800w, images/2022-11-13-02.02.41_12022-11-13-02.02.41.webp 1000w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.02.41.jpg",
+      "fileName": "2022-11-13 02.02.41.jpg",
+      "fileSize": 89219,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6d81a9fed631b0bb7_2022-11-13%2002.02.41.jpg",
+      "width": 1000,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.00.24_12022-11-13-02.00.24.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.00.24_1-p-500.jpg 500w, images/2022-11-13-02.00.24_1-p-800.jpg 800w, images/2022-11-13-02.00.24_12022-11-13-02.00.24.webp 1170w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.00.24.jpg",
+      "fileName": "2022-11-13 02.00.24.jpg",
+      "fileSize": 49040,
+      "height": 941,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6e8261a3219211d49_2022-11-13%2002.00.24.jpg",
+      "width": 1170,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.00.32_12022-11-13-02.00.32.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.00.32_1-p-500.jpg 500w, images/2022-11-13-02.00.32_12022-11-13-02.00.32.webp 769w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.00.32.jpg",
+      "fileName": "2022-11-13 02.00.32.jpg",
+      "fileSize": 89622,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6eaae7f678395f6db_2022-11-13%2002.00.32.jpg",
+      "width": 769,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-02.00.36_12022-11-13-02.00.36.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-02.00.36_1-p-500.jpg 500w, images/2022-11-13-02.00.36_12022-11-13-02.00.36.webp 851w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 02.00.36.jpg",
+      "fileName": "2022-11-13 02.00.36.jpg",
+      "fileSize": 62545,
+      "height": 1280,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d6c83b014c382188fd_2022-11-13%2002.00.36.jpg",
+      "width": 851,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.58.26_12022-11-13-01.58.26.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.58.26_1-p-500.jpg 500w, images/2022-11-13-01.58.26_12022-11-13-01.58.26.webp 537w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.58.26.jpg",
+      "fileName": "2022-11-13 01.58.26.jpg",
+      "fileSize": 23790,
+      "height": 488,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d52f1c498c8e11262d_2022-11-13%2001.58.26.jpg",
+      "width": 537,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.58.20_12022-11-13-01.58.20.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.58.20_1-p-500.jpg 500w, images/2022-11-13-01.58.20_12022-11-13-01.58.20.webp 657w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.58.20.jpg",
+      "fileName": "2022-11-13 01.58.20.jpg",
+      "fileSize": 21504,
+      "height": 680,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d549a24898fef5c5f5_2022-11-13%2001.58.20.jpg",
+      "width": 657,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.56.11_12022-11-13-01.56.11.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.56.11_1-p-500.jpg 500w, images/2022-11-13-01.56.11_12022-11-13-01.56.11.webp 713w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.56.11.jpg",
+      "fileName": "2022-11-13 01.56.11.jpg",
+      "fileSize": 14431,
+      "height": 287,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d57c79cf6c1f16b576_2022-11-13%2001.56.11.jpg",
+      "width": 713,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.55.49_12022-11-13-01.55.49.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.55.49_1-p-500.jpg 500w, images/2022-11-13-01.55.49_12022-11-13-01.55.49.webp 846w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.55.49.jpg",
+      "fileName": "2022-11-13 01.55.49.jpg",
+      "fileSize": 29540,
+      "height": 412,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d52c1bde96e50aee35_2022-11-13%2001.55.49.jpg",
+      "width": 846,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.57.16_12022-11-13-01.57.16.webp" loading="lazy" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.57.16.jpg",
+      "fileName": "2022-11-13 01.57.16.jpg",
+      "fileSize": 22759,
+      "height": 589,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d5adeb72622845b63c_2022-11-13%2001.57.16.jpg",
+      "width": 469,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.55.02_12022-11-13-01.55.02.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.55.02_1-p-500.jpg 500w, images/2022-11-13-01.55.02_12022-11-13-01.55.02.webp 552w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.55.02.jpg",
+      "fileName": "2022-11-13 01.55.02.jpg",
+      "fileSize": 20011,
+      "height": 681,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d52c1bde0b370aee34_2022-11-13%2001.55.02.jpg",
+      "width": 552,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.53.45_12022-11-13-01.53.45.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.53.45_1-p-500.jpg 500w, images/2022-11-13-01.53.45_12022-11-13-01.53.45.webp 731w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.53.45.jpg",
+      "fileName": "2022-11-13 01.53.45.jpg",
+      "fileSize": 14565,
+      "height": 225,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d5ac3bfcd4de7e4eee_2022-11-13%2001.53.45.jpg",
+      "width": 731,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.55.43_12022-11-13-01.55.43.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.55.43_1-p-500.jpg 500w, images/2022-11-13-01.55.43_12022-11-13-01.55.43.webp 643w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.55.43.jpg",
+      "fileName": "2022-11-13 01.55.43.jpg",
+      "fileSize": 17039,
+      "height": 316,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d575bd37e62b1e305c_2022-11-13%2001.55.43.jpg",
+      "width": 643,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.53.58_12022-11-13-01.53.58.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.53.58_1-p-500.jpg 500w, images/2022-11-13-01.53.58_1-p-800.jpg 800w, images/2022-11-13-01.53.58_12022-11-13-01.53.58.webp 971w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.53.58.jpg",
+      "fileName": "2022-11-13 01.53.58.jpg",
+      "fileSize": 65108,
+      "height": 643,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d52c1bde5b7b0aee24_2022-11-13%2001.53.58.jpg",
+      "width": 971,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.53.40_12022-11-13-01.53.40.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.53.40_1-p-500.jpg 500w, images/2022-11-13-01.53.40_12022-11-13-01.53.40.webp 707w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.53.40.jpg",
+      "fileName": "2022-11-13 01.53.40.jpg",
+      "fileSize": 22965,
+      "height": 579,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d4352a00af0ddb6e34_2022-11-13%2001.53.40.jpg",
+      "width": 707,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.52.16_12022-11-13-01.52.16.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.52.16_1-p-500.jpg 500w, images/2022-11-13-01.52.16_1-p-800.jpg 800w, images/2022-11-13-01.52.16_1-p-1080.jpg 1080w, images/2022-11-13-01.52.16_12022-11-13-01.52.16.webp 1280w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.52.16.jpg",
+      "fileName": "2022-11-13 01.52.16.jpg",
+      "fileSize": 64672,
+      "height": 952,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d42f1c493f9211262b_2022-11-13%2001.52.16.jpg",
+      "width": 1280,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.52.12_12022-11-13-01.52.12.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.52.12_1-p-500.jpg 500w, images/2022-11-13-01.52.12_1-p-800.jpg 800w, images/2022-11-13-01.52.12_12022-11-13-01.52.12.webp 1236w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.52.12.jpg",
+      "fileName": "2022-11-13 01.52.12.jpg",
+      "fileSize": 42529,
+      "height": 600,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d46cfab65d10c87a94_2022-11-13%2001.52.12.jpg",
+      "width": 1236,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.53.36_12022-11-13-01.53.36.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.53.36_1-p-500.jpg 500w, images/2022-11-13-01.53.36_12022-11-13-01.53.36.webp 631w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.53.36.jpg",
+      "fileName": "2022-11-13 01.53.36.jpg",
+      "fileSize": 17068,
+      "height": 435,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d4c4acf870869f0ad3_2022-11-13%2001.53.36.jpg",
+      "width": 631,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.52.06_12022-11-13-01.52.06.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.52.06_1-p-500.jpg 500w, images/2022-11-13-01.52.06_1-p-800.jpg 800w, images/2022-11-13-01.52.06_1-p-1080.jpg 1080w, images/2022-11-13-01.52.06_12022-11-13-01.52.06.webp 1230w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.52.06.jpg",
+      "fileName": "2022-11-13 01.52.06.jpg",
+      "fileSize": 33457,
+      "height": 506,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d48a031be272554450_2022-11-13%2001.52.06.jpg",
+      "width": 1230,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.51.21_12022-11-13-01.51.21.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.51.21_1-p-500.jpg 500w, images/2022-11-13-01.51.21_1-p-800.jpg 800w, images/2022-11-13-01.51.21_1-p-1080.jpg 1080w, images/2022-11-13-01.51.21_12022-11-13-01.51.21.webp 1280w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.51.21.jpg",
+      "fileName": "2022-11-13 01.51.21.jpg",
+      "fileSize": 63147,
+      "height": 1022,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d344af8e59edb7510f_2022-11-13%2001.51.21.jpg",
+      "width": 1280,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.51.26_12022-11-13-01.51.26.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.51.26_1-p-500.jpg 500w, images/2022-11-13-01.51.26_1-p-800.jpg 800w, images/2022-11-13-01.51.26_1-p-1080.jpg 1080w, images/2022-11-13-01.51.26_12022-11-13-01.51.26.webp 1280w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.51.26.jpg",
+      "fileName": "2022-11-13 01.51.26.jpg",
+      "fileSize": 58093,
+      "height": 983,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d3e634d08cd7cc916e_2022-11-13%2001.51.26.jpg",
+      "width": 1280,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.50.54_12022-11-13-01.50.54.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.50.54_1-p-500.jpg 500w, images/2022-11-13-01.50.54_1-p-800.jpg 800w, images/2022-11-13-01.50.54_12022-11-13-01.50.54.webp 1008w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.50.54.jpg",
+      "fileName": "2022-11-13 01.50.54.jpg",
+      "fileSize": 46662,
+      "height": 756,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d397560d1d95355d22_2022-11-13%2001.50.54.jpg",
+      "width": 1008,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.48.53_12022-11-13-01.48.53.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.48.53_1-p-500.jpg 500w, images/2022-11-13-01.48.53_1-p-800.jpg 800w, images/2022-11-13-01.48.53_12022-11-13-01.48.53.webp 1132w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.48.53.jpg",
+      "fileName": "2022-11-13 01.48.53.jpg",
+      "fileSize": 66725,
+      "height": 635,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d37c79cf49b316b56c_2022-11-13%2001.48.53.jpg",
+      "width": 1132,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.49.15_12022-11-13-01.49.15.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.49.15_1-p-500.jpg 500w, images/2022-11-13-01.49.15_12022-11-13-01.49.15.webp 642w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.49.15.jpg",
+      "fileName": "2022-11-13 01.49.15.jpg",
+      "fileSize": 25275,
+      "height": 592,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d3abe61b9bd6606203_2022-11-13%2001.49.15.jpg",
+      "width": 642,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.51.39_12022-11-13-01.51.39.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.51.39_1-p-500.jpg 500w, images/2022-11-13-01.51.39_1-p-800.jpg 800w, images/2022-11-13-01.51.39_12022-11-13-01.51.39.webp 1056w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.51.39.jpg",
+      "fileName": "2022-11-13 01.51.39.jpg",
+      "fileSize": 24950,
+      "height": 464,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d349a2480dcdf5c5f3_2022-11-13%2001.51.39.jpg",
+      "width": 1056,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.50.10_12022-11-13-01.50.10.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.50.10_1-p-500.jpg 500w, images/2022-11-13-01.50.10_12022-11-13-01.50.10.webp 534w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.50.10.jpg",
+      "fileName": "2022-11-13 01.50.10.jpg",
+      "fileSize": 23170,
+      "height": 609,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d344af8e1ca0b7510e_2022-11-13%2001.50.10.jpg",
+      "width": 534,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+          <a href="#" class="gallery-item w-inline-block w-lightbox"><img src="images/2022-11-13-01.50.50_12022-11-13-01.50.50.webp" loading="lazy" sizes="100vw" srcset="images/2022-11-13-01.50.50_1-p-500.jpg 500w, images/2022-11-13-01.50.50_12022-11-13-01.50.50.webp 671w" alt="" class="gallery-image">
+            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "example_img",
+      "origFileName": "2022-11-13 01.50.50.jpg",
+      "fileName": "2022-11-13 01.50.50.jpg",
+      "fileSize": 15846,
+      "height": 313,
+      "url": "https://uploads-ssl.webflow.com/63234a846c8cfe190247a6b7/637677d33efa2cb51f3bf570_2022-11-13%2001.50.50.jpg",
+      "width": 671,
+      "type": "image"
+    }
+  ],
+  "group": "Student Wins"
+}</script>
+          </a>
+        </div>
+        <div class="cta-container">
+          <div class="btn-container">
+            <a href="#the-choice-is-yours" class="cta white-text w-button">JOIN NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wf-section">
+    <div class="container faq">
+      <div class="container__padding">
+        <div class="h2-container">
+          <h2 class="h2">FAQ</h2>
+          <div class="h2-line"></div>
+        </div>
+        <div class="faq5_component">
+          <div class="w-layout-grid faq5_list">
+            <div class="faq5_accordion">
+              <div data-w-id="ddf6dd67-5f64-bed7-63f4-5c3ad39f65cc" class="faq5_question">
+                <div class="text-size-medium text-weight-bold"><strong><em>“How quickly will I make my money back?”</em></strong></div><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" loading="lazy" alt="" class="faq5_icon">
+              </div>
+              <div style="height:0px" class="faq5_answer">
+                <div class="margin-bottom margin-small">
+                  <div class="max-width-large">
+                    <p>It depends on how seriously you take The Real World.</p>
+                  </div>
+                </div>
+                <p>But<em> </em>many students made their money back in a couple of weeks.</p>
+              </div>
+            </div>
+            <div class="faq5_accordion">
+              <div data-w-id="ddf6dd67-5f64-bed7-63f4-5c3ad39f65e2" class="faq5_question">
+                <div class="text-size-medium text-weight-bold"><strong><em>“Do I need money to start?”</em></strong></div><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" loading="lazy" alt="" class="faq5_icon">
+              </div>
+              <div style="height:0px" class="faq5_answer">
+                <div class="margin-bottom margin-small">
+                  <div class="max-width-large">
+                    <p>Not necessarily.<br></p>
+                  </div>
+                </div>
+                <p>A lot of our students chose copywriting and freelancing, which are businesses without money requirements.<br></p>
+              </div>
+            </div>
+            <div class="faq5_accordion">
+              <div data-w-id="ddf6dd67-5f64-bed7-63f4-5c3ad39f65f3" class="faq5_question">
+                <div class="text-size-medium text-weight-bold"><strong><em>“Does my age really not matter?”</em></strong></div><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" loading="lazy" alt="" class="faq5_icon">
+              </div>
+              <div style="height:0px" class="faq5_answer">
+                <div class="margin-bottom margin-small">
+                  <div class="max-width-large">
+                    <p>It <em>really</em> doesn’t.</p>
+                  </div>
+                </div>
+                <p>Instead of getting the newest videogame just to find it boring in a week, you can shock your friends and family by becoming the kid who’s leveling up <em>in real life</em>.</p>
+              </div>
+            </div>
+            <div class="faq5_accordion">
+              <div data-w-id="ddf6dd67-5f64-bed7-63f4-5c3ad39f65ff" class="faq5_question">
+                <div class="text-size-medium text-weight-bold"><strong><em>“I know nothing about the skills you teach. Is it a problem?”</em></strong></div><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" loading="lazy" alt="" class="faq5_icon">
+              </div>
+              <div style="height:0px" class="faq5_answer">
+                <div class="margin-bottom margin-small">
+                  <div class="max-width-large">
+                    <p>Of course not.</p>
+                    <p>This is a mentoring program, and you are here to learn from us.</p>
+                    <p>Just follow our step-by-step lessons and guidance, and you will start a profitable business.<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq5_accordion">
+              <div data-w-id="1454c194-7b2a-2c3f-4eb7-aa94733ea801" class="faq5_question">
+                <div class="text-size-medium text-weight-bold"><strong><em>“I don&#x27;t have a lot of time available, can I still apply?”</em></strong></div><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" loading="lazy" alt="" class="faq5_icon">
+              </div>
+              <div style="height:0px" class="faq5_answer">
+                <div class="margin-bottom margin-small">
+                  <div class="max-width-large">
+                    <p><strong>Rule #1 of The Real World is SPEED.</strong> </p>
+                    <p>The methods we teach are designed for rapid execution.</p>
+                    <p>So all you need is a minimum of 30 minutes a day to listen to your professors and apply what you’ve learned.<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq5_accordion">
+              <div data-w-id="d5821997-007a-cf63-b0c1-44e7954ca7e5" class="faq5_question">
+                <div class="text-size-medium text-weight-bold"><strong><em>“I live in X country. Is it a problem?”</em></strong></div><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" loading="lazy" alt="" class="faq5_icon">
+              </div>
+              <div style="height:0px" class="faq5_answer">
+                <div class="margin-bottom margin-small">
+                  <div class="max-width-large">
+                    <p>Not at all.</p>
+                    <p>At The Real World, we teach how to make money <strong><em>online</em></strong>, so it doesn’t matter where you are.</p>
+                    <p>Your location will only change the currency of your earnings.<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq5_accordion">
+              <div data-w-id="cd369367-6a04-afaf-faa0-f1ef6c95dec0" class="faq5_question">
+                <div class="text-size-medium text-weight-bold"><strong>Still have questions?</strong></div><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" loading="lazy" alt="" class="faq5_icon">
+              </div>
+              <div style="height:0px" class="faq5_answer">
+                <div class="margin-bottom margin-small">
+                  <div class="max-width-large">
+                    <p>Click the red circle on the bottom right of your screen.</p>
+                    <p>Ask anything about The Real World to the Live Chat.<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cta-container">
+          <div class="btn-container">
+            <a href="#the-choice-is-yours" class="cta white-text w-button">JOIN NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-7 wf-section">
+    <div class="container">
+      <div class="footer__padding">
+        <div class="footer-container">
+          <div id="w-node-_3f015d71-237a-6aaa-5ed3-ff3c24d29b9a-24d29b96">
+            <a href="https://app.jointherealworld.com" class="footer-link btn-copy">Log In</a>
+            <a href="/manage" class="footer-link btn-copy">Manage Membership</a>
+            <a href="support.html" class="footer-link btn-copy">Contact Us</a>
+            <a href="terms-and-conditions.html" class="footer-link btn-copy">Terms &amp; Conditions</a>
+            <a href="privacy-policy.html" class="footer-link btn-copy">Privacy Policy</a>
+            <div class="footer-link margin-top">Need help? Contact <a href="mailto:support@jointherealworld.com"><strong class="bold-text-13">support@jointherealworld.com</strong></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63b08a4f64ba71419b3e22b9" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+var params = new URLSearchParams(window.location.search);
+var affiliateId = params.get('a');
+var liveCode = params.get('live');
+var gtm = params.get('gtm');
+params.delete('a');
+var purchaseLink = affiliateId
+  ? [
+      'https://jointherealworld.com/checkout?' +
+        [
+          'a=' + affiliateId,
+          params.has('subid') && 'subid=' + params.get('subid'),
+        ]
+          .filter(Boolean)
+          .join('&'),
+    ].join('')
+  : 'https://jointherealworld.com/checkout';
+liveCode = affiliateId ? liveCode : null;
+console.log(liveCode);
+if (liveCode) {
+  var liveScript = document.createElement('script');
+  liveScript.setAttribute('async', '');
+  liveScript.src = '//code.tidio.co/' + liveCode + '.js';
+  document.body.appendChild(liveScript);
+} else {
+  window.intercomSettings = {
+    api_base: 'https://api-iam.intercom.io',
+    app_id: 'z3s8zv7r',
+  };
+  // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/z3s8zv7r'
+  (function () {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === 'function') {
+      ic('reattach_activator');
+      ic('update', w.intercomSettings);
+    } else {
+      var d = document;
+      var i = function () {
+        i.c(arguments);
+      };
+      i.q = [];
+      i.c = function (args) {
+        i.q.push(args);
+      };
+      w.Intercom = i;
+      var l = function () {
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://widget.intercom.io/widget/z3s8zv7r';
+        var x = d.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+        if (window.location.pathname === '/support') Intercom('show');
+      };
+      if (document.readyState === 'complete') {
+        l();
+      } else if (w.attachEvent) {
+        w.attachEvent('onload', l);
+      } else {
+        w.addEventListener('load', l, false);
+      }
+    }
+  })();
+}
+if (gtm) {
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', gtm);
+}
+var buyButtons = document.querySelectorAll('.w-button');
+buyButtons.forEach(function (link) {
+  if (link.getAttribute('href') && link.getAttribute('href').includes('/checkout')) {
+    link.href = purchaseLink;
+  }
+});
+</script>
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+console.log(window.location.search);
+  var urlParams = window.location.search;
+	$('#skills a' ).each(function(){
+     this.href += urlParams;
+	});
+  $('.btn' ).each(function(){
+     this.href += urlParams;
+	});
+});
+</script>
+</body>
+</html>
