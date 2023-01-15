@@ -2008,8 +2008,8 @@ strong {
 }
 
 .matrix-bg._2.bootcamp {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url('../images/matrix-bg-bw-compress.jpg');
-  background-image: linear-gradient(180deg, transparent, transparent), url('../images/matrix-bg-bw-compress.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url('../images/matrix-bg-bw-compress.webp');
+  background-image: linear-gradient(180deg, transparent, transparent), url('../images/matrix-bg-bw-compress.webp');
 }
 
 .side-line {
@@ -3204,8 +3204,8 @@ strong {
 }
 
 .body--matrix--greyscale {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url('../images/matrix-bg-bw-compress.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/matrix-bg-bw-compress.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url('../images/matrix-bg-bw-compress.webp');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/matrix-bg-bw-compress.webp');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
@@ -3745,8 +3745,8 @@ strong {
   right: 0%;
   bottom: 10%;
   z-index: 1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url('../images/matrix-bg-bw-compress.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/matrix-bg-bw-compress.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url('../images/matrix-bg-bw-compress.webp');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/matrix-bg-bw-compress.webp');
   background-position: 0px 0px, 50% 100%;
   background-size: auto, cover;
 }
@@ -4468,6 +4468,7 @@ strong {
 }
 
 .html-embed-8 {
+  display: none;
   width: 100%;
   height: 100%;
   background-color: #08080d;
@@ -4638,6 +4639,7 @@ strong {
   color: #fff;
   font-size: 20px;
   line-height: 140%;
+  font-weight: 500;
 }
 
 .rt.right {
@@ -4646,6 +4648,7 @@ strong {
 
 .rt.right p {
   margin-bottom: 20px;
+  font-weight: 500;
   text-align: right;
 }
 
@@ -4721,6 +4724,7 @@ strong {
 
 .rt p {
   color: #08080d;
+  font-weight: 500;
 }
 
 .rt.choose-skill {
@@ -4729,6 +4733,10 @@ strong {
 
 .rt.choose-skill strong {
   color: #ffc438;
+}
+
+.rt._1 {
+  margin-top: 45px;
 }
 
 .div-block-56 {
@@ -5347,11 +5355,14 @@ strong {
 }
 
 .image-33 {
+  position: relative;
   height: 40px;
   margin-bottom: 10px;
 }
 
 .text-block-9 {
+  position: relative;
+  z-index: 1;
   font-family: 'Gilroy Bold', sans-serif;
   color: #08080d;
   font-size: 20px;
@@ -5513,7 +5524,7 @@ strong {
   padding-bottom: 10px;
   border-style: solid;
   border-width: 2px;
-  border-color: #fff;
+  border-color: #08080d;
   border-radius: 50px;
   background-color: hsla(0, 0%, 100%, 0);
   color: #fff;
@@ -5632,6 +5643,7 @@ strong {
 
 .rt-copy p {
   color: #08080d;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -5646,6 +5658,16 @@ strong {
 
 .div-block-77 {
   max-width: 46ch;
+}
+
+.submit-button {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 10;
+  opacity: 0;
 }
 
 @media screen and (min-width: 1280px) {
@@ -6185,6 +6207,10 @@ strong {
 
   .rt.margin-left {
     padding-left: 10px;
+  }
+
+  .rt._1 {
+    margin-top: 25px;
   }
 
   .div-block-56 {
