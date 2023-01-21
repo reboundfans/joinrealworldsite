@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Tue Jan 17 2023 18:35:55 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Sat Jan 21 2023 16:00:23 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="63c04a55283c5e58706d3de7" data-wf-site="63b08a4f64ba71419b3e22b9">
 <head>
   <meta charset="utf-8">
@@ -68,7 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="footer__padding">
         <div class="footer-container">
           <div id="w-node-_3f015d71-237a-6aaa-5ed3-ff3c24d29b9a-24d29b96">
-            <a href="https://app.jointherealworld.com" class="footer-link btn-copy">Log In</a>
+            <a href="https://app.jointherealworld.com" class="footer-link btn-copy login">Log In</a>
             <a href="/manage" class="footer-link btn-copy">Manage Membership</a>
             <a href="support.html" class="footer-link btn-copy">Contact Us</a>
             <a href="terms-and-conditions.html" class="footer-link btn-copy">Terms &amp; Conditions</a>
@@ -100,8 +100,18 @@ var purchaseLink = affiliateId
           .join('&'),
     ].join('')
   : 'https://jointherealworld.com/checkout';
+var loginLink = affiliateId
+  ? [
+    'http://app.jointherealworld.com?' +
+    [
+      'a=' + affiliateId,
+      params.has('subid') && 'subid=' + params.get('subid'),
+    ]
+    .filter(Boolean)
+    .join('&'),
+  ].join('')
+  : 'http://app.jointherealworld.com';
 liveCode = affiliateId ? liveCode : null;
-console.log(liveCode);
 if (liveCode) {
   var liveScript = document.createElement('script');
   liveScript.setAttribute('async', '');
@@ -160,10 +170,16 @@ if (gtm) {
     f.parentNode.insertBefore(j, f);
   })(window, document, 'script', 'dataLayer', gtm);
 }
-var buyButtons = document.querySelectorAll('.w-button, .red-pill');
+var buyButtons = document.querySelectorAll('.checkout, .w-button, .red-pill');
 buyButtons.forEach(function (link) {
   if (link.getAttribute('href') && link.getAttribute('href').includes('secure.')) {
     link.href = purchaseLink;
+  }
+});
+var loginButtons = document.querySelectorAll('.login');
+loginButtons.forEach(function (link) {
+  if (link.getAttribute('href')) {
+    link.href = loginLink;
   }
 });
 </script>

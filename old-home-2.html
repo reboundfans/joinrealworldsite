@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Tue Jan 17 2023 18:35:55 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Sat Jan 21 2023 16:00:23 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="63b08a4f64ba710a383e22ca" data-wf-site="63b08a4f64ba71419b3e22b9">
 <head>
   <meta charset="utf-8">
@@ -146,7 +146,7 @@ _wq.push({ id: 'behoouhq0y', onReady: function(video) {
       </div>
     </div>
     <div id="hero-content" data-w-id="1c5ee218-394c-7bcf-6238-fae03b796a1a" style="opacity:1;display:flex" class="hero-content">
-      <div class="container _w-padding full-h"><img src="images/Mask-group_1Mask-group.webp" loading="lazy" srcset="images/Mask-group_1-p-500.png 500w, images/Mask-group_1Mask-group.webp 517w" sizes="(max-width: 479px) 46vw, (max-width: 767px) 30vw, 20vw" alt="The Real World logo" class="image-8">
+      <div class="container _w-padding full-h"><img src="images/Mask-group_1Mask-group.webp" loading="lazy" sizes="(max-width: 479px) 46vw, (max-width: 767px) 30vw, (max-width: 1279px) 20vw, 240px" srcset="images/Mask-group_1-p-500.png 500w, images/Mask-group_1Mask-group.webp 517w" alt="The Real World logo" class="image-8">
         <div class="div-block-16">
           <h1 class="heading-3">THE <span class="text-span-4">REAL WORLD</span></h1>
           <div class="sub-header">Click The Screen to Play</div>
@@ -314,8 +314,18 @@ var purchaseLink = affiliateId
           .join('&'),
     ].join('')
   : 'https://jointherealworld.com/checkout';
+var loginLink = affiliateId
+  ? [
+    'http://app.jointherealworld.com?' +
+    [
+      'a=' + affiliateId,
+      params.has('subid') && 'subid=' + params.get('subid'),
+    ]
+    .filter(Boolean)
+    .join('&'),
+  ].join('')
+  : 'http://app.jointherealworld.com';
 liveCode = affiliateId ? liveCode : null;
-console.log(liveCode);
 if (liveCode) {
   var liveScript = document.createElement('script');
   liveScript.setAttribute('async', '');
@@ -374,10 +384,16 @@ if (gtm) {
     f.parentNode.insertBefore(j, f);
   })(window, document, 'script', 'dataLayer', gtm);
 }
-var buyButtons = document.querySelectorAll('.w-button, .red-pill');
+var buyButtons = document.querySelectorAll('.checkout, .w-button, .red-pill');
 buyButtons.forEach(function (link) {
   if (link.getAttribute('href') && link.getAttribute('href').includes('secure.')) {
     link.href = purchaseLink;
+  }
+});
+var loginButtons = document.querySelectorAll('.login');
+loginButtons.forEach(function (link) {
+  if (link.getAttribute('href')) {
+    link.href = loginLink;
   }
 });
 </script>
