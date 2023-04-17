@@ -4733,7 +4733,7 @@ strong {
   margin-top: 60px;
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
-  grid-row-gap: 16px;
+  grid-row-gap: 24px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
@@ -4746,6 +4746,11 @@ strong {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  transition: transform 0.3s ease !important;
+}
+
+.pill-btn:hover {
+  transform: scale3d(1.1, 1.1, 1) !important;
 }
 
 .image-33 {
