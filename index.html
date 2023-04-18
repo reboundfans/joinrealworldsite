@@ -2937,19 +2937,14 @@ var Webflow = Webflow || [];
       }
     });
   </script>
+
   <script>
-/*
-document.addEventListener("DOMContentLoaded", function(event) {
-console.log(window.location.search);
-var purchaseLink = 'https://secure.jointherealworld.com/';
-var buyButtons = document.querySelectorAll('.checkout, .w-button, .red-pill');
-buyButtons.forEach(function (link) {
-  console.log(link);
-  if (link.getAttribute('href')) {
-    link.href = purchaseLink;
-  }
-});
-*/
-</script>
+    const source = new EventSource('https://secure.jointherealworld.com/api/purchases');
+    source.addEventListener('purchase', purchaseEvent => {
+      const data = JSON.parse(purchaseEvent.data);
+      console.log(data);
+    })
+  </script>
+
 </body>
 </html>
