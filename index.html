@@ -16,7 +16,8 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/the-real-world-82e306e8137855ae6e2603cf.webflow.css" rel="stylesheet" type="text/css">
-  <!-- Notify -->
+  
+  <!-- Purchase Popups -->
   <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
@@ -2944,33 +2945,6 @@ var Webflow = Webflow || [];
     });
   </script>
 
-  <script> 
-    const source = new EventSource('https://secure.jointherealworld.com/api/purchases');
-    source.addEventListener('purchase', purchaseEvent => {
-      const data = JSON.parse(purchaseEvent.data);
-      if(data.name && data.countryName){
-        var div = addPurchasePupup(data.name, data.countryName);
-      }
-    })
-    
-    
-    function addPurchasePupup(name, country){
-      var div = document.createElement("div");
-
-      div.innerHTML = `<div class='purchase-popup'>
-    <img src="./images/Mask-group-1_1Mask-group-1.webp" loading="lazy" alt="The Real World logo">
-    <p><strong>${name}</strong> from <strong>${country}</strong> has purchased THE REAL WORLD and is escaping The Matrix.</p>
-  </div>`;
-
-    var screenW = document.documentElement.clientWidth;
-    var position = screenW < 767 ? 'top-left' : 'bottom-left';
-
-      alertify.set('notifier','position', position);
-      //alertify.message(name + ' from ' + country + ' has purchased a Real World entry ticket');
-      alertify.message(div);
-        
-    }
-  </script>
-
+  <script src='js/purchasePopup.js'></script>
 </body>
 </html>
