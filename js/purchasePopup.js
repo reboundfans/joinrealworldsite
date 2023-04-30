@@ -12,7 +12,7 @@
 const source = new EventSource('https://secure.jointherealworld.com/api/purchases');
 source.addEventListener('purchase', purchaseEvent => {
   const data = JSON.parse(purchaseEvent.data);
-  if(data.name && data.countryName) addPurchasePopup(abbreviateName(data.Name), data.countryName);
+  if(data.name && data.countryName) addPurchasePopup(data.name, data.countryName);
 })
 
 
@@ -21,7 +21,7 @@ function addPurchasePopup(name, country){
 
   div.innerHTML = `<div class='purchase-popup'>
     <img src="./images/Mask-group-1_1Mask-group-1.webp" loading="lazy" alt="The Real World logo">
-    <p><strong>${name}</strong> from <strong>${country}</strong> has purchased THE REAL WORLD and is escaping The Matrix.</p>
+    <p><strong>${abbreviateName(name)}</strong> ${(country && country.trim().length > 0) ? 'from <strong>' + country.trim() + '</strong>' : ''} has purchased THE REAL WORLD and is escaping The Matrix.</p>
     </div>`;
 
   var screenW = document.documentElement.clientWidth;
@@ -33,9 +33,9 @@ function addPurchasePopup(name, country){
 
 function abbreviateName(name){
   
-  if(!name) return '';
+  if(!name || name.trim().length <= 0) return 'Anon';
 
-  var nameSplit = name.split(' ');
+  var nameSplit = name.trim().split(' ');
   if(nameSplit.length > 1 && nameSplit[nameSplit.length - 1].length > 0){
     name = nameSplit[0] + ' ' + nameSplit[nameSplit.length - 1].charAt(0).toUpperCase() + '.';
   }
