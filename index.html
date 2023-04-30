@@ -2948,7 +2948,6 @@ var Webflow = Webflow || [];
     const source = new EventSource('https://secure.jointherealworld.com/api/purchases');
     source.addEventListener('purchase', purchaseEvent => {
       const data = JSON.parse(purchaseEvent.data);
-      console.log(data);
       if(data.name && data.countryName){
         var div = addPurchasePupup(data.name, data.countryName);
       }
@@ -2960,11 +2959,10 @@ var Webflow = Webflow || [];
 
       div.innerHTML = `<div class='purchase-popup'>
     <img src="./images/Mask-group-1_1Mask-group-1.webp" loading="lazy" alt="The Real World logo">
-    <p><strong>${name}</strong> from <strong>${country}</strong> has purchased <strong>THE REAL WORLD</strong> and is escaping The Matrix.</p>
+    <p><strong>${name}</strong> from <strong>${country}</strong> has purchased THE REAL WORLD and is escaping The Matrix.</p>
   </div>`;
 
     var screenW = document.documentElement.clientWidth;
-    console.log(screenW);
     var position = screenW < 767 ? 'top-left' : 'bottom-left';
 
       alertify.set('notifier','position', position);
