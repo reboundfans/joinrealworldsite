@@ -6272,8 +6272,8 @@ strong {
   /*top: calc(100vh - 200px);
   left: 0;*/
   z-index: 999;
-  max-width: 60vw;
-  width: 380px;
+  max-width: 80vw;
+  width: 450px;
   padding: 10px 50px 10px 15px;
   /*background-color: #ffa545;*/
   background-color: #fff;

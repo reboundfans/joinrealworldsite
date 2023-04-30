@@ -2951,12 +2951,6 @@ var Webflow = Webflow || [];
       console.log(data);
       if(data.name && data.countryName){
         var div = addPurchasePupup(data.name, data.countryName);
-      /*
-      setTimeout(function(){
-          if(div)
-            div.remove();
-        }, 5000);
-      */
       }
     })
     
@@ -2966,35 +2960,18 @@ var Webflow = Webflow || [];
 
       div.innerHTML = `<div class='purchase-popup'>
     <img src="./images/Mask-group-1_1Mask-group-1.webp" loading="lazy" alt="The Real World logo">
-    <p><strong>${name}</strong> from <strong>${country}</strong> has purchased a Real World entry ticket</p>
+    <p><strong>${name}</strong> from <strong>${country}</strong> has escaped the matrix and joined us in <strong>THE REAL WORLD</strong></p>
   </div>`;
 
-      alertify.set('notifier','position', 'top-left');
+    var screenW = document.documentElement.clientWidth;
+    console.log(screenW);
+    var position = screenW < 767 ? 'top-left' : 'bottom-left';
+
+      alertify.set('notifier','position', position);
       //alertify.message(name + ' from ' + country + ' has purchased a Real World entry ticket');
       alertify.message(div);
         
     }
-/*
-    function removePurchasePopup(element){
-      if(element && element.parentNode){
-
-        const keyframes = [
-          { transform: "translate(0px, 0px)" },
-          { transform: "translate(-500px, 0px" },
-        ];
-
-        const animation = {
-          duration: 500,
-          iterations: 1,
-        };
-
-        element.parentNode.animate(keyframes, animation);
-        setTimeout(function(){
-          element.parentNode.remove();
-        }, 500)
-      }
-    }
-    */
   </script>
 
 </body>
