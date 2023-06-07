@@ -102,6 +102,10 @@
   display: block;
 }
 
+.purchase-popup strong{
+  color: #fff !important;
+}
+
 body {
   color: #fff;
   background-color: #0b0e13;
