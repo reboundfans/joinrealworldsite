@@ -4414,7 +4414,7 @@ function addPurchasePopup(name, country){
   var div = document.createElement("div");
   div.innerHTML = `<div class='purchase-popup'>
     <img src="https://uploads-ssl.webflow.com/64680f89ffc502a63b8e9d79/647ba85d856b0f60f62b1580_trwlogo.webp" loading="lazy" alt="The Real World Logo">
-    <p><strong>${abbreviateName(name)}</strong> ${country && country.trim().length > 0 ? 'from <strong>' + country.trim() + '</strong>' : ''} has purchased Hustler's University and is escaping The Matrix.</p>
+    <p><strong>${abbreviateName(name)}</strong> ${country && country.trim().length > 0 ? 'from <strong>' + country.trim() + '</strong>' : ''} has purchased The Real World and is escaping The Matrix.</p>
     </div>`;
   var screenW = document.documentElement.clientWidth;
   var position = screenW < 767 ? 'top-left' : 'bottom-left';
