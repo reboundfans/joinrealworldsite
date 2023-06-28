@@ -4392,6 +4392,7 @@ const videos = [
     });
 
     $('.checkout-btn').on('click', function(){
+      console.log('checkout clicked');
       posthog.capture('join_now');
     });
 
