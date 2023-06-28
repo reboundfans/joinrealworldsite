@@ -4390,6 +4390,11 @@ const videos = [
         link.href = link.href+linkParams;
       }
     });
+
+    $('.checkout-btn').on('click', function(){
+      if(posthog) posthog.capture('join_now');
+    });
+
   </script>
   <script>
 const source = new EventSource('https://secure.jointherealworld.com/api/purchases');
