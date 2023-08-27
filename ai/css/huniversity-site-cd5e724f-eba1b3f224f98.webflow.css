@@ -1868,6 +1868,10 @@ figcaption {
   font-size: 2rem;
 }
 
+.hero-logo {
+  width: 120px;
+}
+
 .image-4 {
   z-index: 2;
   position: absolute;
@@ -2262,6 +2266,10 @@ figcaption {
     right: 0%;
   }
 
+  .hero-logo {
+    width: 150px;
+  }
+
   .ai-generated-wrap {
     width: 100%;
   }
@@ -2574,6 +2582,10 @@ figcaption {
   .people-wrap {
     margin-top: 1rem;
     font-size: 1em;
+  }
+
+  .hero-logo {
+    width: 120px;
   }
 
   .arrow-button {
@@ -2975,6 +2987,10 @@ figcaption {
 
   .faq-heading {
     font-size: 1.6rem;
+  }
+
+  .hero-logo {
+    width: 100px;
   }
 
   .ai-generated-wrap {
@@ -3439,7 +3455,7 @@ figcaption {
   }
 
   .hero-logo {
-    width: 60px;
+    width: 90px;
   }
 
   .arrow-button {
