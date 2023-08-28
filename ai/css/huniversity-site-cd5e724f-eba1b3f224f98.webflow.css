@@ -1824,6 +1824,9 @@ figcaption {
 }
 
 .text-announcement {
+  justify-content: center;
+  font-family: GROUPE, sans-serif;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
@@ -1870,6 +1873,7 @@ figcaption {
 
 .hero-logo {
   width: 120px;
+  margin-bottom: -20px;
 }
 
 .image-4 {
@@ -2215,9 +2219,47 @@ figcaption {
   width: 100px;
 }
 
+.gradient-text {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(196deg, #ff8d3a, #ffcf23);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.div-block {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div-block-2 {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-direction: row;
+  margin-left: 10px;
+  display: flex;
+}
+
+.div-block-3 {
+  width: 65px;
+  background-color: rgba(255, 255, 255, .06);
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 10px;
+  padding: 9px;
+}
+
+.text-block {
+  font-family: Inter Extra Bold, sans-serif;
+  font-size: 1.8rem;
+}
+
 @media screen and (min-width: 1280px) {
   .hu-trust_image {
     left: 24%;
+  }
+
+  .hero-logo {
+    margin-bottom: -20px;
   }
 
   .ai-image {
@@ -2238,6 +2280,10 @@ figcaption {
     display: none;
     left: -30px;
     right: -22%;
+  }
+
+  .hero-logo {
+    margin-bottom: -25px;
   }
 
   .ai-image {
@@ -2268,6 +2314,7 @@ figcaption {
 
   .hero-logo {
     width: 150px;
+    margin-bottom: -20px;
   }
 
   .ai-generated-wrap {
@@ -2572,11 +2619,10 @@ figcaption {
   }
 
   .text-announcement {
-    max-width: 90%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: .9rem;
+    font-size: 1.1rem;
   }
 
   .people-wrap {
@@ -2654,6 +2700,15 @@ figcaption {
   .html-embed {
     width: 45%;
     height: 41vw;
+  }
+
+  .div-block-3 {
+    width: 50px;
+    padding: 4px;
+  }
+
+  .text-block {
+    font-size: 1.6rem;
   }
 }
 
@@ -3443,7 +3498,13 @@ figcaption {
 
   .text-announcement {
     max-width: 100%;
+    margin-bottom: 10px;
     font-size: .8rem;
+  }
+
+  .button-pepople-wrap {
+    z-index: 70;
+    position: relative;
   }
 
   .people-wrap {
@@ -3507,6 +3568,18 @@ figcaption {
 
   .footer-logo {
     width: 80px;
+  }
+
+  .div-block {
+    flex-direction: column;
+  }
+
+  .div-block-3 {
+    width: 45px;
+  }
+
+  .text-block {
+    font-size: 1.3rem;
   }
 }
 
@@ -3631,6 +3704,20 @@ figcaption {
   font-family: 'Satoshi Variable';
   src: url('../fonts/Satoshi-Variable.woff2') format('woff2');
   font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Extra Bold';
+  src: url('../fonts/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GROUPE';
+  src: url('../fonts/groupemedium-8mxgn.otf') format('opentype');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
