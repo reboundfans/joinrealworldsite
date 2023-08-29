@@ -2227,6 +2227,7 @@ figcaption {
 }
 
 .div-block {
+  color: #f84752;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -2242,8 +2243,8 @@ figcaption {
 
 .div-block-3 {
   width: 65px;
-  background-color: rgba(255, 255, 255, .06);
-  border: 2px solid rgba(255, 255, 255, .5);
+  background-image: linear-gradient(rgba(248, 71, 82, .13), rgba(248, 71, 82, 0));
+  border: 2px solid #f84752;
   border-radius: 10px;
   padding: 9px;
 }
