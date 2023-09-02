@@ -1456,7 +1456,7 @@ figcaption {
   font-size: 1.375rem;
   font-weight: 700;
   line-height: 1;
-  display: block;
+  display: flex;
 }
 
 .button-outline.reveal-circle-2 {
@@ -1471,6 +1471,12 @@ figcaption {
 
 .button-outline.reveal-circle-2.login-btn.footer {
   margin-right: 0;
+}
+
+.button-outline.trw_btn-hero--scroll {
+  color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, .06);
+  font-size: 1.6rem;
 }
 
 .rw-hero_arrow {
@@ -2125,7 +2131,7 @@ figcaption {
 }
 
 .section-rw-cta {
-  background-image: url('../images/image-104-1.png');
+  background-image: url('../../images/image-104-1.png');
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 1320px;
@@ -3235,6 +3241,13 @@ figcaption {
   font-size: 2rem;
 }
 
+.trw__hero_buttons-container {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   h2 {
     text-align: center;
@@ -4068,6 +4081,11 @@ figcaption {
   .text-block-5 {
     font-size: 1.5rem;
   }
+
+  .trw__hero_buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -4330,6 +4348,7 @@ figcaption {
   }
 
   .button-text.big.nav {
+    padding-top: 0;
     font-size: 1.125rem;
   }
 
@@ -4353,6 +4372,10 @@ figcaption {
     padding-right: .5rem;
     font-size: 1rem;
     display: flex;
+  }
+
+  .button-outline.trw_btn-hero--scroll {
+    font-size: 1.2rem;
   }
 
   .rw-hero_arrow, .rw-hero_arrow-2 {
