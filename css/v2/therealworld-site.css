@@ -2266,6 +2266,7 @@ figcaption {
 }
 
 .footer-image_wrapper {
+  height: 110px;
   grid-column-gap: 1.8125rem;
   grid-row-gap: 1.8125rem;
   justify-content: center;
@@ -4023,6 +4024,20 @@ figcaption {
     padding-top: .5rem;
   }
 
+  .footer_component-grid {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-link_wrapper {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-image_wrapper {
+    margin-bottom: 1rem;
+  }
+
   .rw-hero_video-wrapper {
     height: 300px;
   }
@@ -4664,11 +4679,16 @@ figcaption {
   .footer_component-grid {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-columns: 1fr;
   }
 
-  .footer-link, .footer-link.text-style-underline {
+  .footer-link {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .footer-link.text-style-underline {
     font-size: 1rem;
   }
 
@@ -4916,6 +4936,14 @@ figcaption {
   .text-block-4 {
     font-size: 1.2rem;
   }
+
+  .link-block {
+    width: 122px;
+  }
+
+  .link-block.w--current {
+    width: 90px;
+  }
 }
 
 #w-node-_76b2387b-6228-1d21-ce20-f34260d63084-3b8e9d6e, #w-node-_76b2387b-6228-1d21-ce20-f34260d63089-3b8e9d6e, #w-node-b73ad3cd-d7bc-3a43-7aa8-577dccc4d05f-3b8e9d6e {
@@ -4977,7 +5005,7 @@ figcaption {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_2f189d6f-f798-abe7-8bed-ed7a1809895b-3b8e9d6e {
+#w-node-_22e06c34-8469-1ae9-1218-cbb6a8087dee-3b8e9d6e {
   grid-area: span 5 / span 1 / span 5 / span 1;
 }
 
@@ -5102,6 +5130,16 @@ figcaption {
 
   #w-node-_2ab6b376-1804-54ed-b70d-d4712a8c134a-3b8e9d6e, #w-node-_33fada3e-770b-7a52-4b33-a980e2d7064b-3b8e9d6e {
     order: -9999;
+  }
+
+  #w-node-d300556f-862e-b806-0374-754ca7f4b5fe-3b8e9d6e {
+    grid-row: span 1 / span 1;
+    align-self: start;
+    justify-self: center;
+  }
+
+  #w-node-_22e06c34-8469-1ae9-1218-cbb6a8087dee-3b8e9d6e {
+    grid-area: 1 / 1 / 2 / 2;
   }
 
   #w-node-d995a1c1-6bca-c204-4eee-4ee6e651937b-16cdf9d3, #w-node-d995a1c1-6bca-c204-4eee-4ee6e651938c-16cdf9d3 {
