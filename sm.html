@@ -1440,8 +1440,8 @@ pointer-events: none;
               <div class="padding-section-medium">
                 <div class="rw-footer_component">
                   <h2 class="h2-ai footer">WANT TO LEARN ABOUT OUR OTHER <span class="text-color-white bold-900">WEALTH CREATION CAMPUSES?</span></h2>
-                  <a href="https://jointherealworld.com/" target="_blank" class="button footer w-inline-block">
-                    <div class="button-text">VISIT THE HOMEPAGE</div>
+                  <a href="https://jointherealworld.com/" target="_blank" class="button footer lp-link w-inline-block">
+                    <div class="button-text ">VISIT THE HOMEPAGE</div>
                   </a>
                   <link rel="prefetch" href="https://jointherealworld.com/">
                   <div class="w-layout-grid footer_component-grid">
@@ -1587,7 +1587,7 @@ pointer-events: none;
   var lpLinks = document.querySelectorAll('.lp-link');
   lpLinks.forEach(function (link) {
     if (link.getAttribute('href')) {
-      link.href = link.href+linkParams;
+      link.href = link.href + "?" + linkParams;
     }
   });
 $('.checkout-btn').on('click', function(){
