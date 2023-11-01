@@ -1,8 +1,8 @@
 :root {
   --ffffff-white: white;
   --ed4761-yellow: #ffbb38;
-  --red: #f8434e;
   --arrow-color: #585858;
+  --red: #f8434e;
   --0b0e13-bg-black: #0b0e13;
   --181b21-bg-2: #181b21;
 }
@@ -407,7 +407,11 @@ figcaption {
   display: flex;
 }
 
-.margin-top.margin-medium.hero, .margin-top.margin-large.cta {
+.margin-top.margin-medium.hero {
+  margin-top: .6rem;
+}
+
+.margin-top.margin-large.cta {
   margin-top: 2rem;
 }
 
@@ -1375,6 +1379,10 @@ figcaption {
   padding-bottom: 6.625rem;
 }
 
+.padding-section-custom1.hero-pad {
+  padding-top: 6rem;
+}
+
 .rw-upgrade_heading-wrapper {
   grid-column-gap: 1.25rem;
   grid-row-gap: 1.25rem;
@@ -1685,20 +1693,26 @@ figcaption {
 }
 
 .top-anouncement {
+  z-index: 99;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, .4);
   justify-content: center;
   align-items: center;
   padding-top: .63em;
   padding-bottom: .63em;
   display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
 
 .text-announcement {
-  color: var(--red);
+  color: var(--ffffff-white);
   font-family: Generalsans Variable, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .button-pepople-wrap {
@@ -2245,6 +2259,13 @@ figcaption {
   margin-bottom: 0;
 }
 
+.text-span {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(92deg, #ffcf23, #ff8d3a);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 @media screen and (min-width: 1440px) {
   .container-small {
     max-width: 57rem;
@@ -2553,6 +2574,10 @@ figcaption {
     padding-bottom: 4rem;
   }
 
+  .padding-section-custom1.hero-pad {
+    padding-top: 5.6rem;
+  }
+
   .rw-reviews_image-wrapper {
     column-count: 3;
   }
@@ -2573,7 +2598,7 @@ figcaption {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   .people-wrap {
@@ -2916,6 +2941,10 @@ figcaption {
     font-size: 1.2rem;
   }
 
+  .padding-section-custom1.hero-pad {
+    padding-top: 5.3rem;
+  }
+
   .rw-upgrade_heading-wrapper {
     grid-column-gap: .75rem;
     grid-row-gap: .75rem;
@@ -2974,7 +3003,7 @@ figcaption {
   }
 
   .text-announcement {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .button-pepople-wrap {
@@ -3292,6 +3321,10 @@ figcaption {
     padding-bottom: 3.5rem;
   }
 
+  .padding-section-custom1.hero-pad {
+    padding-top: 4.4rem;
+  }
+
   .rw-upgrade_heading-wrapper {
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
@@ -3369,7 +3402,7 @@ figcaption {
   }
 
   .text-announcement {
-    font-size: .9rem;
+    font-size: 1.8rem;
   }
 
   .people-wrap {
