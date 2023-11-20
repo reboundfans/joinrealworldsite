@@ -129,7 +129,6 @@
 
 </head>
 <body class="body">
-
   <section class="header">
     <div class="annaucement-bar">
       <div class="acb-wrapper"><img src="revamp/images/time-line.svg" loading="lazy" alt="">
@@ -172,6 +171,50 @@
   </section>
   <main class="main">
     <section class="hero-section-for-mobile">
+      <div class="w-embed w-script">
+        <style>
+	iframe{
+  	width:100%;
+    height: 100%;
+    display:block;
+  }
+  .video-embed{
+  	aspect-ratio: 16/9;
+  }
+</style>
+        <script src="https://embed.cloudflarestream.com/embed/sdk.latest.js"></script>
+        <!--  Your JavaScript code below -->
+        <script>
+  var Webflow = Webflow || [];
+  Webflow.push(function () {
+    const playerM = Stream(document.getElementById('main-video-M'));
+    // Function to restart video
+    function restartVideoM() {
+    console.log('restartVideoM');
+      playerM.currentTime = 0;
+      playerM.play();
+    }
+    //Function to toggle mute
+    function toggleMuteM() {
+    console.log('toggleMuteM');
+    	if(playerM.muted === void(0)) playerM.muted = true;
+      if (playerM.muted) {
+        // Unmuted
+        playerM.volume = 1;
+        playerM.muted = false;
+      } else {
+        // Muted
+        playerM.volume = 0;
+        playerM.muted = true;
+      }
+    }
+    // Toggle mute/unmute and overlay display on click of the video overlay
+    $('#video-overlay-M').on("click", toggleMuteM);
+    // Restart the video when the video overlay is clicked
+    $('#video-overlay-M').on("click", restartVideoM);
+  });
+</script>
+      </div>
       <div class="mobile-video-wrapper">
         <div class="c-hero-img-wrapper-mobile">
           <div class="mobile-hero-wrapper">
@@ -181,8 +224,8 @@
 <source src="https://cdn.shopify.com/revamp/videos/c/o/v/2a9e2705e2434797aadd898965eee412.mp4" type="video/mp4">
 </video> -->
               </div>
-              <div class="video-embed-hero w-embed w-iframe"><iframe src="https://customer-29d3r31yjz332bf4.cloudflarestream.com/fc9bf6e00fb297a9a676c5f45ca417dd/iframe?muted=true&autoplay=true&poster=https%3A%2F%2Fcustomer-29d3r31yjz332bf4.cloudflarestream.com%2Ffc9bf6e00fb297a9a676c5f45ca417dd%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600" style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true" id="main-video"></iframe></div>
-              <div id="video-overlay" data-w-id="2e5267cd-0602-5f51-6a23-f8b680c8750c" style="opacity:1;display:flex" class="black-overlay">
+              <div class="video-embed-hero w-embed w-iframe"><iframe src="https://customer-29d3r31yjz332bf4.cloudflarestream.com/fc9bf6e00fb297a9a676c5f45ca417dd/iframe?muted=true&autoplay=true&poster=https%3A%2F%2Fcustomer-29d3r31yjz332bf4.cloudflarestream.com%2Ffc9bf6e00fb297a9a676c5f45ca417dd%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600" style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true" id="main-video-M"></iframe></div>
+              <div id="video-overlay-M" data-w-id="2e5267cd-0602-5f51-6a23-f8b680c8750c" style="opacity:1;display:flex" class="black-overlay">
                 <div id="play-icon" class="play-button"><img src="revamp/images/Vector.webp" loading="lazy" alt="" class="play_button-image"></div>
               </div>
             </div>
@@ -223,8 +266,15 @@
         </div>
       </div>
     </section>
-    <div class="w-embed w-script">
-      <style>
+    <section class="c-section-hero">
+      <div class="hero-content-wrap">
+        <div class="hero-title-wrapper">
+          <h1 data-w-id="a125a09e-d7bc-25e9-fefb-8089369a9463" style="opacity:0" class="heading">MONEY MAKING IS <span class="text-span">A SKILL</span></h1>
+          <h4 data-w-id="a125a09e-d7bc-25e9-fefb-8089369a9467" style="opacity:0" class="heading-top-mobile">We will teach you how to <span class="bolder-hero-text">master it</span></h4>
+        </div>
+      </div>
+      <div class="w-embed w-script">
+        <style>
 	iframe{
   	width:100%;
     height: 100%;
@@ -234,20 +284,22 @@
   	aspect-ratio: 16/9;
   }
 </style>
-      <script src="https://embed.cloudflarestream.com/embed/sdk.latest.js"></script>
-      <!--  Your JavaScript code below -->
-      <script>
+        <script src="https://embed.cloudflarestream.com/embed/sdk.latest.js"></script>
+        <!--  Your JavaScript code below -->
+        <script>
   var Webflow = Webflow || [];
   Webflow.push(function () {
     const player = Stream(document.getElementById('main-video'));
     // Function to restart video
     function restartVideo() {
+    console.log('restartVideo');
     	console.log('restart');
       player.currentTime = 0;
       player.play();
     }
     //Function to toggle mute
     function toggleMute() {
+    console.log('toggleMute');
     	if(player.muted === void(0)) player.muted = true;
       if (player.muted) {
         // Unmuted
@@ -265,13 +317,6 @@
     $('#video-overlay').on("click", restartVideo);
   });
 </script>
-    </div>
-    <section class="c-section-hero">
-      <div class="hero-content-wrap">
-        <div class="hero-title-wrapper">
-          <h1 data-w-id="a125a09e-d7bc-25e9-fefb-8089369a9463" style="opacity:0" class="heading">MONEY MAKING IS <span class="text-span">A SKILL</span></h1>
-          <h4 data-w-id="a125a09e-d7bc-25e9-fefb-8089369a9467" style="opacity:0" class="heading-top-mobile">We will teach you how to <span class="bolder-hero-text">master it</span></h4>
-        </div>
       </div>
       <div data-w-id="21544b7e-54c2-0748-c678-f5d83152f6f2" style="opacity:0" class="hero-video-wrapper">
         <div class="html-embed w-embed">
@@ -611,14 +656,14 @@
               <div class="video-embed w-embed"></div>
             </div>
           </div>
-          <div id="w-node-_76b7e032-89fc-c98e-955d-e8822637aa0a-fe6115e7" data-w-id="76b7e032-89fc-c98e-955d-e8822637aa0a" class="info-box">
+          <div id="w-node-_76b7e032-89fc-c98e-955d-e8822637aa0a-fe6115e7" data-w-id="76b7e032-89fc-c98e-955d-e8822637aa0a" class="info-box hide">
             <div class="info-box-top new">
               <div class="icon-title"><img src="revamp/images/info-8.svg" loading="lazy" alt="" class="icon-lg">
                 <h2 class="heading-new-skill">FITNESS</h2>
               </div>
               <p class="paragraphn-skill"><span class="text-span-pricing-lock-par">Master the fundamental skills of business.</span> We’ll teach you every skill the hyper successful entrepreneur of tomorrow needs to master.</p>
               <div class="floting">NEW</div>
-            </div><img src="revamp/images/IMAGE-2023-10-06-154120.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1439px) 47vw, 667px" srcset="revamp/images/IMAGE-2023-10-06-154120-p-500.jpg 500w, revamp/images/IMAGE-2023-10-06-154120-p-800.jpg 800w, revamp/images/IMAGE-2023-10-06-154120-p-1080.jpg 1080w, revamp/images/IMAGE-2023-10-06-154120.jpg 1280w" alt="">
+            </div><img src="revamp/images/IMAGE-2023-10-06-154120.jpg" loading="lazy" sizes="100vw" srcset="revamp/images/IMAGE-2023-10-06-154120-p-500.jpg 500w, revamp/images/IMAGE-2023-10-06-154120-p-800.jpg 800w, revamp/images/IMAGE-2023-10-06-154120-p-1080.jpg 1080w, revamp/images/IMAGE-2023-10-06-154120.jpg 1280w" alt="">
           </div>
           <div id="w-node-_9f4e59a5-ac21-2dbf-d6ab-c66d6150bad2-fe6115e7" data-w-id="9f4e59a5-ac21-2dbf-d6ab-c66d6150bad2" class="info-box">
             <div class="info-box-top new">
@@ -1278,6 +1323,25 @@
           </div>
           <div class="c-student-interview-single-box">
             <div class="c-text-wrapper">
+              <h3 class="heading-8">Content Creation &amp; AI<br></h3>
+              <div class="txt-flaug-s-interview">
+                <div class="text-block-6">Seth, 19</div><img src="revamp/images/usa.png" loading="lazy" alt="" class="image-20">
+              </div>
+              <div class="text-block-9">New revenue: <span class="text-span-14">$10k/month</span></div>
+              <div class="text-block-9-copy">Seth worked a part-time job and had no monetizable skills when he first joined The Real World... He has since learned Content Creation &amp; AI which has scaled his income to over $10,000/month.</div>
+            </div>
+            <div class="c-video-wrapper">
+              <div id="seth2" class="video-wrapper-interview">
+                <div class="video-overlay"><img src="revamp/images/seth2.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1439px) 46vw, 586px" srcset="revamp/images/seth2-p-500.png 500w, revamp/images/seth2-p-800.png 800w, revamp/images/seth2-p-1080.png 1080w, revamp/images/seth2-p-1600.png 1600w, revamp/images/seth2.webp 1920w" alt="" class="video-overlay-img">
+                  <div class="video-play-button"><img src="https://uploads-ssl.webflow.com/64680f89ffc502a63b8e9d79/64822d3451ca189529b688bd_pb.png" loading="lazy" alt="" class="play_button-image"></div>
+                  <div class="load-gif"></div>
+                </div>
+                <div class="video-embed w-embed"></div>
+              </div>
+            </div>
+          </div>
+          <div class="c-student-interview-single-box">
+            <div class="c-text-wrapper">
               <h3 class="heading-8">Crypto</h3>
               <div class="txt-flaug-s-interview">
                 <div class="text-block-6">AC, 20</div><img src="revamp/images/france.png" loading="lazy" alt="" class="image-20">
@@ -1592,25 +1656,6 @@
             <div class="c-video-wrapper">
               <div id="nicolas" class="video-wrapper-interview">
                 <div class="video-overlay"><img src="revamp/images/nicolas.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1439px) 46vw, 586px" srcset="revamp/images/nicolas-p-500.png 500w, revamp/images/nicolas-p-800.png 800w, revamp/images/nicolas-p-1080.png 1080w, revamp/images/nicolas.webp 1920w" alt="" class="video-overlay-img">
-                  <div class="video-play-button"><img src="https://uploads-ssl.webflow.com/64680f89ffc502a63b8e9d79/64822d3451ca189529b688bd_pb.png" loading="lazy" alt="" class="play_button-image"></div>
-                  <div class="load-gif"></div>
-                </div>
-                <div class="video-embed w-embed"></div>
-              </div>
-            </div>
-          </div>
-          <div class="c-student-interview-single-box">
-            <div class="c-text-wrapper">
-              <h3 class="heading-8">Content Creation &amp; AI<br></h3>
-              <div class="txt-flaug-s-interview">
-                <div class="text-block-6">Seth, 19</div><img src="revamp/images/usa.png" loading="lazy" alt="" class="image-20">
-              </div>
-              <div class="text-block-9">New revenue: <span class="text-span-14">$10k/month</span></div>
-              <div class="text-block-9-copy">Seth worked a part-time job and had no monetizable skills when he first joined The Real World... He has since learned Content Creation &amp; AI which has scaled his income to over $10,000/month.</div>
-            </div>
-            <div class="c-video-wrapper">
-              <div id="seth2" class="video-wrapper-interview">
-                <div class="video-overlay"><img src="revamp/images/seth2.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1439px) 46vw, 586px" srcset="revamp/images/seth2-p-500.png 500w, revamp/images/seth2-p-800.png 800w, revamp/images/seth2-p-1080.png 1080w, revamp/images/seth2-p-1600.png 1600w, revamp/images/seth2.webp 1920w" alt="" class="video-overlay-img">
                   <div class="video-play-button"><img src="https://uploads-ssl.webflow.com/64680f89ffc502a63b8e9d79/64822d3451ca189529b688bd_pb.png" loading="lazy" alt="" class="play_button-image"></div>
                   <div class="load-gif"></div>
                 </div>

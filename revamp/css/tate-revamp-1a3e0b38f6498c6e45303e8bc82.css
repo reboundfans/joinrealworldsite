@@ -6,12 +6,16 @@ body {
 }
 
 .c-nav-links {
+  min-width: 290px;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+  flex-wrap: wrap;
   display: flex;
 }
 
 .c-cta-btn {
+  width: 700px;
+  justify-content: flex-end;
   align-items: center;
   display: flex;
 }
