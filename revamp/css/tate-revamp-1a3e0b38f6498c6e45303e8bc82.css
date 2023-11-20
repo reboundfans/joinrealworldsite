@@ -3403,10 +3403,6 @@ body {
     margin-bottom: 0;
   }
 
-  .mobile-hero-content {
-    background-image: linear-gradient(rgba(5, 12, 19, 0), #050c13 13%, #050c13);
-  }
-
   .icon-lg {
     width: 36px;
   }
