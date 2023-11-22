@@ -2060,6 +2060,7 @@ body {
 
   .c-video-wrapper {
     max-width: none;
+    aspect-ratio: 16 / 9;
   }
 
   .heading-s-i.access {
@@ -2740,6 +2741,7 @@ body {
   }
 
   .mobile-img-wrapper {
+    height: 280px;
     grid-column-gap: 12px;
     grid-row-gap: 12px;
     display: flex;
@@ -2908,6 +2910,11 @@ body {
   .image-50 {
     width: 1.2rem;
     height: 1.1rem;
+  }
+
+  .image-51 {
+    width: 220px;
+    height: 100%;
   }
 }
 
@@ -3592,6 +3599,10 @@ body {
   .play-button {
     width: 4rem;
     height: 4rem;
+  }
+
+  .image-51 {
+    object-fit: cover;
   }
 }
 
