@@ -5,6 +5,11 @@ body {
   line-height: 20px;
 }
 
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .c-nav-links {
   min-width: 290px;
   grid-column-gap: 15px;
@@ -72,6 +77,16 @@ body {
   width: 122.354px;
 }
 
+.c-navlink-tate._2 {
+  white-space: nowrap;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c-navlink-tate._2.indent {
+  white-space: nowrap;
+}
+
 .c-navigation-desktop-tate {
   max-width: 1381px;
   justify-content: space-between;
@@ -92,6 +107,11 @@ body {
   padding: 20px 20px 25px;
 }
 
+.header.small {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .body {
   background-color: #060e15;
   font-family: Generalsans, sans-serif;
@@ -101,6 +121,10 @@ body {
   width: 100%;
   height: 100%;
   margin-top: 10px;
+}
+
+.logo-image._2 {
+  margin-top: 0;
 }
 
 .c-login-button-desktop {
@@ -1958,6 +1982,105 @@ body {
   right: 0%;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section.white-text {
+  color: #d8d8d8;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.div-block-21 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.heading-9 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.heading-10 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.image-52 {
+  width: 60px;
+}
+
+.div-block-22 {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  display: flex;
+}
+
+.text-block-10 {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.div-block-23 {
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.div-block-24 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.c-logo-wrapper-2 {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.brand-2 {
+  width: 80px;
+  flex: none;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+}
+
+.navbar-2 {
+  background-color: rgba(221, 221, 221, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+  align-items: center;
+  display: flex;
+}
+
+.bold-text {
+  cursor: pointer;
+}
+
+.bold-text.link-bold:hover {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 1440px) {
   .text-size-24 {
     font-size: 24px;
@@ -1993,6 +2116,16 @@ body {
     background-color: rgba(221, 221, 221, 0);
   }
 
+  .c-cta-btn._2 {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+
   .nav-link {
     color: #fff;
     text-align: center;
@@ -2001,6 +2134,19 @@ body {
 
   .c-navigation-mobile {
     display: block;
+  }
+
+  .c-navlink-tate._2 {
+    width: auto;
+    text-transform: none;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .c-navlink-tate._2.indent {
+    padding-left: 30px;
   }
 
   .c-navigation-desktop-tate {
@@ -2031,6 +2177,10 @@ body {
   .menu-button-toggle.w--open {
     background-color: rgba(82, 141, 255, 0);
     border-radius: 10px;
+  }
+
+  .c-header-button.checkout-btn._2 {
+    margin-left: 0;
   }
 
   .heading {
@@ -2297,6 +2447,42 @@ body {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .section.white-text {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-2 {
+    z-index: 999;
+  }
+
+  .nav-menu {
+    height: 100svh;
+    background-color: #080e15;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .menu-button {
+    align-self: center;
+    margin-left: auto;
+  }
+
+  .menu-button.w--open {
+    background-color: #090e15;
+  }
+
+  .icon {
+    color: #fff;
   }
 }
 
@@ -2934,6 +3120,16 @@ body {
   .image-51 {
     width: 220px;
     height: 100%;
+  }
+
+  .section.white-text {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  .heading-9._2 {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
@@ -3622,6 +3818,21 @@ body {
 
   .image-51 {
     object-fit: cover;
+  }
+
+  .section.white-text {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  .div-block-21 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .heading-9._2 {
+    font-size: 27px;
+    line-height: 33px;
   }
 }
 
