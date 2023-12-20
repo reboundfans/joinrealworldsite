@@ -3616,7 +3616,6 @@ figcaption {
 
 .hero-video-wrapper-2 {
   max-width: 950px;
-  pointer-events: none;
   margin-left: auto;
   margin-right: auto;
   position: relative;
