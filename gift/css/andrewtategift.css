@@ -3623,6 +3623,18 @@ figcaption {
   box-shadow: 0 2px 70px 1px rgba(255, 255, 255, .14);
 }
 
+.div-block-30 {
+  z-index: 99;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
 @media screen and (min-width: 1440px) {
   .text-size-18 {
     font-size: 1.13rem;
@@ -5124,7 +5136,7 @@ figcaption {
   }
 
   .hero_wrapper {
-    padding-top: 5.3rem;
+    padding-top: 4.8rem;
     padding-bottom: 2rem;
   }
 
@@ -5253,6 +5265,10 @@ figcaption {
     padding-bottom: 2.5rem;
     padding-left: .75rem;
     padding-right: .75rem;
+  }
+
+  .home_student-wrapper {
+    padding-top: 5rem;
   }
 
   .home_student-slider-mask {
