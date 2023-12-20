@@ -2269,7 +2269,7 @@
     var lpLinks = document.querySelectorAll('.lp-link');
     lpLinks.forEach(function (link) {
       if (link.getAttribute('href')) {
-        link.href = link.href+linkParams;
+        link.search = params.toString();
       }
     });
   $('.checkout-btn').on('click', function(){
