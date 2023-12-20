@@ -2759,7 +2759,7 @@ figcaption {
   max-width: 50rem;
   aspect-ratio: 16 / 9;
   opacity: 1;
-  margin-top: 2rem;
+  margin-top: 1rem;
   position: relative;
   box-shadow: 0 0 50px rgba(0, 0, 0, .25);
 }
@@ -4276,6 +4276,10 @@ figcaption {
     padding-bottom: 4rem;
   }
 
+  .home_student-wrapper {
+    padding-top: 5rem;
+  }
+
   .home_student-slider-mask {
     width: 100%;
   }
@@ -4895,6 +4899,10 @@ figcaption {
     font-size: 1.5rem;
   }
 
+  .home_student-wrapper {
+    padding-top: 5rem;
+  }
+
   .swiper-slide-2 {
     width: 90vw;
   }
@@ -5093,6 +5101,10 @@ figcaption {
 
   .home_annoucement-para {
     font-size: .75rem;
+  }
+
+  .home_hero-video_container {
+    margin-top: .6rem;
   }
 
   .nav_menu-wrap {
