@@ -2927,6 +2927,7 @@ figcaption {
 }
 
 .heading-style-h1-2.text-align-center {
+  max-width: 880px;
   color: var(--color--bg);
   text-transform: capitalize;
   margin-top: 0;
@@ -3313,7 +3314,7 @@ figcaption {
 
 .home_student-heading {
   max-width: 33.125rem;
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 .heading-style-h3-3 {
@@ -4188,6 +4189,10 @@ figcaption {
 
   .heading-style-h1-2 {
     font-size: 2.5rem;
+  }
+
+  .heading-style-h1-2.text-align-center {
+    max-width: 720px;
   }
 
   .nav_menu-link {
