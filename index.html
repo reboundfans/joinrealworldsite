@@ -2026,81 +2026,86 @@
 
   <script>
       const campusVideos = [
-                {el: 'ecom-promo' , vidCode: 'a1b0248c6b0ddbd784378e52f7ddbf66'},
-                {el: 'copy-promo' , vidCode: '27efe6e88d5fd5053e78777fd06d1833'},
-                {el: 'stocks-promo' , vidCode: '61fda0e5083e251cfa43b16225d04813'},
-                {el: 'freelance-promo' , vidCode: '09bdf2aea42ee04718120770ece2cbf7'},
-                {el: 'crypto-promo' , vidCode: 'adebd8f7f5717742beaea5970c23de9e'},
-                {el: 'business-promo' , vidCode: '55e183fa36c60d122a5f2ecb57b9cd2d'},
-                {el: 'ugc-promo' , vidCode: '996f1409f5ff8f1eab450d6d33dad17d'},
-                {el: 'ccc-promo' , vidCode: '67680f858abf5f71587a3059fdf84663'}
-      ]
-      const videos = [
-                {el: 'tre' , vidCode: '543a90cad58840c361be33a38fbea501'},
-                {el: 'jacob' , vidCode: 'c875e003caec4fd53d2e6816ed2a5e08'},
-                {el: 'nicolas' , vidCode: '31a170c153eb4e69ba3ac619ca0eb360'},
-                {el: 'adam' , vidCode: '5125a44f6fb0799615f9ee7738881f7b'},
-                {el: 'giannis' , vidCode: 'd833888d76a8d639bdf3ae9ea4396915'},
-                {el: 'chris' , vidCode: '143f4f7eede1f9a50942ff4563cbc2ac'},
-                {el: 'micah' , vidCode: 'a0a2a0c951d37eb93fbf6848ad57d9c0'},
-                {el: 'seth' , vidCode: 'f102e45aabc6c4bb72cb038ff61b5c30'},
-                {el: 'seth2' , vidCode: 'eb441606e17c95b51aa2b77b88020c46'},
-                {el: 'stefan' , vidCode: '6d141d97a54b8d5be60e41a2337097fd'},
-                {el: 'adrien' , vidCode: '8c4116841c212fdeca64e2e49d597bf9'},
-                {el: 'ted' , vidCode: '7b95d11884ad05b9239c20cefd115d7c'},
-                {el: 'ardi' , vidCode: '17cacb34118ec4e227ab99a448ced0e7'},
-                {el: 'nox' , vidCode: 'fa000d1c470b3067b73ec15f64ae8caf'},
-                {el: 'mena' , vidCode: '86f4bacb705ca6edd60c405f146bd293'},
-                {el: 'jordan' , vidCode: '84b42e0002c3471d92b9bff6047dd7ea'},
-                {el: 'ac' , vidCode: '1c24abb13bf9ae088e8f0df4199ceb16'},
-                {el: 'dana' , vidCode: 'a3fbf3a144ae57f4c297fe9fa7941ca3'},
-                {el: 'jonathan' , vidCode: 'd3b4d83e2d3863e92638493ca1e584cc'},
-                {el: 'federico' , vidCode: '38927f45dca8f2f761ca3a6f4d709a98'},
-                {el: 'christianmeija' , vidCode: '8c86be5942f8bf682b7d6ee81d4a692a'},
-                {el: 'burak' , vidCode: '96434b994055c46ff1be5ba29d686740'},
-                {el: 'belmin' , vidCode: '45ae45953022daee1c81d9a588876d92'},
-                {el: 'ando' , vidCode: '987a6d42a33680eb4167894e887a9368'},
-                {el: 'alessio' , vidCode: '70ebdf4fd3cac3ff4cabc1a15d5b815b'},
-                {el: 'saad' , vidCode: '84a6f6f5d71f12bf78546bb2edcaa230'},
-                {el: 'alex' , vidCode: '28e1ddbd22d7dc0a08937eecc9ad23d0'},
-                {el: 'micah' , vidCode: '58d87b2c3d92b7bc3de8bd36e36636ae'},
-                {el: 'dan' , vidCode: '02b20f6717cad0d2993673851d83774e'},
-                {el: 'brice' , vidCode: '31a951c179bbf41d6bb78048683ce688'},
-                {el: 'earl' , vidCode: 'baf3605a6e1e3c1f881dc2f206d384d9'},
-                {el: 'vuyo' , vidCode: '7530faa596b066578aef399f62bac2ca'},
-                {el: 'orson' , vidCode: '7838ebbd5d55d200caa7c8f0a9ae6aee'},
-                {el: 'austin' , vidCode: 'df690076055b21595e42c9d2e7e255f7'},
-                {el: 'danial' , vidCode: 'dc0d07bc086dd5b67a3fa7bff7ea26a5'},
-                {el: 'bando' , vidCode: 'defa25ca9dbc782a3f8584b7f58249b4'},
-                {el: 'andre' , vidCode: '36740db4d6f66cfbf572844a96b6a767'},
-                {el: 'filippo' , vidCode: 'c8713b7589332ca0d1140ab5e2d076be'},
-                {el: 'mathew' , vidCode: 'a1bc60e81d25ccc18c170583a5f29fe9'},
-                {el: 'veterang' , vidCode: '7f203f4030bb1f0b9088d1ac598feeaa'},
-                {el: 'ryan' , vidCode: '103a2c06f39e8e320df4233efe265d7e'},
-                {el: 'ronan' , vidCode: '43f1447b06714b8c783ad3fcff9f4365'},
-                {el: 'terell' , vidCode: '558cad14095db54de35dd5002232e02a'},
-                {el: 'travis' , vidCode: '5bb186f476700732ce78acad975cd692'},
-                {el: 'shahraja' , vidCode: 'e526012c4b4ffb76c0335ec286384c8d'},
-                {el: 'ramy' , vidCode: '953d0fc6c3e778b3bd3108c156a72c51'},
-                {el: 'maktor' , vidCode: '0607949edc31ca0faf52c8fba12201bd'},
-                {el: 'paul' , vidCode: 'b92fcb1a94d2b333e813c6335ba8073a'},
-                {el: 'garrau' , vidCode: '7471b9017e487c071e914b6f88e2f7a0'},
-                {el: 'nikolai' , vidCode: '81cae6058d9228d4c0c2118991a00801'},
-                {el: 'milosh' , vidCode: 'ea0025cc3a291c20c4a68df46d8d1276'},
-                {el: 'matteo' , vidCode: '95b367ac32127e2146a0305a1d40d112'},
-                {el: 'chihab' , vidCode: '6d56f77f391770d3afedaebfda33e578'},
-                {el: 'efrem' , vidCode: 'ee3856c895d3c8664385193c31edbfe5'},
-                {el: 'sotiris' , vidCode: '8d688b49e8973690fad39316494bb0f7'},
-                {el: 'darith' , vidCode: 'f7255caa5866fcdf79857cae73fa033d'},
-                {el: 'freeezy' , vidCode: 'cd9e5b2c0becde90c8621f89dc17aa10'}
-                ]
-      function getVidByEl(vidElId){
-        var el = campusVideos.find(vid => vid.el === vidElId);
-        if(!el){
-          el = videos.find(vid => vid.el === vidElId);
-        }
-        return el.vidCode;
+    {el: 'ecom-promo' , vidCode: '545525ce2ac830b7bde6c45217b33d89'},
+    {el: 'copy-promo' , vidCode: 'a3275cb75cdc1f06b646942fc851b7ce'},
+    {el: 'stocks-promo' , vidCode: '46c5d43c095f9e7b34b83f356104ab5b'},
+    {el: 'freelance-promo' , vidCode: '482573672d803ef649d65c1a7e04db7c'},
+    {el: 'cryptoinv-promo' , vidCode: '7e8cc9214c4439622f86d38ff9188672'},
+    {el: 'cryptotrade-promo' , vidCode: 'ca350351844012eac236fb72d7fa6990'},
+    {el: 'business-promo' , vidCode: '5fcdf4882b4545a84028222066db817b'},
+    {el: 'ugc-promo' , vidCode: '996f1409f5ff8f1eab450d6d33dad17d'},
+    {el: 'ccc-promo' , vidCode: 'bb671f136b1d46366aa8c4086023ee13'}
+    ]
+
+    const videos = [
+              {el: 'tre' , vidCode: '543a90cad58840c361be33a38fbea501'},
+              {el: 'jacob' , vidCode: 'c875e003caec4fd53d2e6816ed2a5e08'},
+              {el: 'nicolas' , vidCode: '31a170c153eb4e69ba3ac619ca0eb360'},
+              {el: 'adam' , vidCode: '5125a44f6fb0799615f9ee7738881f7b'},
+              {el: 'giannis' , vidCode: 'd833888d76a8d639bdf3ae9ea4396915'},
+              {el: 'chris' , vidCode: '143f4f7eede1f9a50942ff4563cbc2ac'},
+              {el: 'micah' , vidCode: 'a0a2a0c951d37eb93fbf6848ad57d9c0'},
+              {el: 'seth' , vidCode: 'f102e45aabc6c4bb72cb038ff61b5c30'},
+              {el: 'seth2' , vidCode: 'b086649dbb1df5deabff519cc571ea21'},
+              {el: 'stefan' , vidCode: '6d141d97a54b8d5be60e41a2337097fd'},
+              {el: 'adrien' , vidCode: '8c4116841c212fdeca64e2e49d597bf9'},
+              {el: 'ted' , vidCode: '7b95d11884ad05b9239c20cefd115d7c'},
+              {el: 'ardi' , vidCode: '17cacb34118ec4e227ab99a448ced0e7'},
+              {el: 'nox' , vidCode: 'fa000d1c470b3067b73ec15f64ae8caf'},
+              {el: 'mena' , vidCode: '86f4bacb705ca6edd60c405f146bd293'},
+              {el: 'jordan' , vidCode: '84b42e0002c3471d92b9bff6047dd7ea'},
+              {el: 'ac' , vidCode: '1c24abb13bf9ae088e8f0df4199ceb16'},
+              {el: 'dana' , vidCode: 'a3fbf3a144ae57f4c297fe9fa7941ca3'},
+              {el: 'jonathan' , vidCode: 'd3b4d83e2d3863e92638493ca1e584cc'},
+              {el: 'federico' , vidCode: '38927f45dca8f2f761ca3a6f4d709a98'},
+              {el: 'christianmeija' , vidCode: '8c86be5942f8bf682b7d6ee81d4a692a'},
+              {el: 'burak' , vidCode: '96434b994055c46ff1be5ba29d686740'},
+              {el: 'belmin' , vidCode: '45ae45953022daee1c81d9a588876d92'},
+              {el: 'ando' , vidCode: '987a6d42a33680eb4167894e887a9368'},
+              {el: 'alessio' , vidCode: '70ebdf4fd3cac3ff4cabc1a15d5b815b'},
+              {el: 'saad' , vidCode: '84a6f6f5d71f12bf78546bb2edcaa230'},
+              {el: 'alex' , vidCode: '28e1ddbd22d7dc0a08937eecc9ad23d0'},
+              {el: 'micah' , vidCode: '58d87b2c3d92b7bc3de8bd36e36636ae'},
+              {el: 'dan' , vidCode: '02b20f6717cad0d2993673851d83774e'},
+              {el: 'brice' , vidCode: '31a951c179bbf41d6bb78048683ce688'},
+              {el: 'earl' , vidCode: 'baf3605a6e1e3c1f881dc2f206d384d9'},
+              {el: 'vuyo' , vidCode: '7530faa596b066578aef399f62bac2ca'},
+              {el: 'orson' , vidCode: '7838ebbd5d55d200caa7c8f0a9ae6aee'},
+              {el: 'austin' , vidCode: 'df690076055b21595e42c9d2e7e255f7'},
+              {el: 'danial' , vidCode: 'dc0d07bc086dd5b67a3fa7bff7ea26a5'},
+              {el: 'bando' , vidCode: 'defa25ca9dbc782a3f8584b7f58249b4'},
+              {el: 'andre' , vidCode: '36740db4d6f66cfbf572844a96b6a767'},
+              {el: 'filippo' , vidCode: 'c8713b7589332ca0d1140ab5e2d076be'},
+              {el: 'mathew' , vidCode: 'a1bc60e81d25ccc18c170583a5f29fe9'},
+              {el: 'veterang' , vidCode: '7f203f4030bb1f0b9088d1ac598feeaa'},
+              {el: 'ryan' , vidCode: '103a2c06f39e8e320df4233efe265d7e'},
+              {el: 'ronan' , vidCode: '43f1447b06714b8c783ad3fcff9f4365'},
+              {el: 'terell' , vidCode: '558cad14095db54de35dd5002232e02a'},
+              {el: 'travis' , vidCode: '5bb186f476700732ce78acad975cd692'},
+              {el: 'shahraja' , vidCode: 'e526012c4b4ffb76c0335ec286384c8d'},
+              {el: 'ramy' , vidCode: '953d0fc6c3e778b3bd3108c156a72c51'},
+              {el: 'maktor' , vidCode: '0607949edc31ca0faf52c8fba12201bd'},
+              {el: 'paul' , vidCode: 'b92fcb1a94d2b333e813c6335ba8073a'},
+              {el: 'garrau' , vidCode: '7471b9017e487c071e914b6f88e2f7a0'},
+              {el: 'nikolai' , vidCode: '81cae6058d9228d4c0c2118991a00801'},
+              {el: 'milosh' , vidCode: 'ea0025cc3a291c20c4a68df46d8d1276'},
+              {el: 'matteo' , vidCode: '95b367ac32127e2146a0305a1d40d112'},
+              {el: 'chihab' , vidCode: '6d56f77f391770d3afedaebfda33e578'},
+              {el: 'efrem' , vidCode: 'ee3856c895d3c8664385193c31edbfe5'},
+              {el: 'sotiris' , vidCode: '8d688b49e8973690fad39316494bb0f7'},
+              {el: 'darith' , vidCode: 'f7255caa5866fcdf79857cae73fa033d'},
+              {el: 'freeezy' , vidCode: 'cd9e5b2c0becde90c8621f89dc17aa10'}
+              ]
+
+    function getVidByEl(vidElId){
+    	
+      var el = campusVideos.find(vid => vid.el === vidElId);
+      if(!el){
+      	el = videos.find(vid => vid.el === vidElId);
       }
+
+      return el.vidCode;
+    }
       $('.video-overlay').on('click', function(){
           var el = $(this).parent().attr('id');
           $('#' + el + ' .video-play-button').css('display', 'none');
