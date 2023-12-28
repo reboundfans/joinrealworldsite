@@ -1850,6 +1850,8 @@ figcaption {
 }
 
 .limited_button-wrap.small-m {
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
   margin-top: 2rem;
 }
 
@@ -1885,6 +1887,7 @@ figcaption {
 }
 
 .section_fade {
+  z-index: -1;
   width: 100%;
   height: 10vh;
   background-image: linear-gradient(to top, var(--bg), rgba(11, 10, 9, 0));
@@ -2646,6 +2649,7 @@ figcaption {
 .footer_top {
   justify-content: space-between;
   align-items: center;
+  margin-top: -30px;
   margin-bottom: 1rem;
   display: flex;
 }
@@ -2717,15 +2721,10 @@ figcaption {
   letter-spacing: 0;
   text-transform: uppercase;
   background-color: #202020;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
   font-size: .88rem;
   font-weight: 500;
-  position: fixed;
-  top: 0%;
-  bottom: auto;
-  left: 0%;
-  right: 0%;
 }
 
 .notification_link {
@@ -2739,15 +2738,11 @@ figcaption {
 }
 
 .navigation {
-  z-index: 999;
+  z-index: 997;
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  position: fixed;
-  top: 37px;
-  bottom: auto;
-  left: 0%;
-  right: 0%;
+  padding-bottom: 1rem;
 }
 
 .navbar_content {
@@ -3010,6 +3005,11 @@ figcaption {
   max-width: 44vw;
 }
 
+.champions-logo {
+  width: 100%;
+  height: 100%;
+}
+
 .banner_text {
   color: var(--a7a297);
   letter-spacing: .25em;
@@ -3071,6 +3071,16 @@ figcaption {
 
 .silder_h3 {
   white-space: nowrap;
+}
+
+.notification_text {
+  color: #ffcf23;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.notification_text.text-color-white {
+  color: #fff;
 }
 
 .banner_image {
@@ -3441,6 +3451,54 @@ figcaption {
 .text-span-3 {
   color: var(--fff8f1);
   white-space: nowrap;
+}
+
+.link-block {
+  height: 170px;
+  aspect-ratio: 1 / 1;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+.div-block-9 {
+  display: none;
+}
+
+.div-block-10 {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.timer {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.timer-item {
+  width: 46.1563px;
+  background-color: rgba(255, 207, 35, .07);
+  border: 2px solid rgba(243, 198, 37, .35);
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  display: flex;
+}
+
+.div-block-11 {
+  z-index: 999;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
 
 @media screen and (min-width: 1440px) {
@@ -3823,7 +3881,7 @@ figcaption {
     justify-items: center;
   }
 
-  .section_limited {
+  .section_limited, .section_limited._2 {
     background-position: 70%;
   }
 
@@ -3949,6 +4007,11 @@ figcaption {
     margin-top: 2rem;
   }
 
+  .navigation {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
   .tabs-listss {
     height: 100%;
   }
@@ -4016,7 +4079,7 @@ figcaption {
   }
 
   .champions-logo {
-    width: 8rem;
+    object-fit: contain;
   }
 
   .features_image {
@@ -4059,6 +4122,23 @@ figcaption {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .link-block {
+    height: 140px;
+  }
+
+  .div-block-9 {
+    z-index: 99;
+    width: 100%;
+    height: 2px;
+    background-color: #0b0a0a;
+    display: block;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
   }
 }
 
@@ -4225,6 +4305,7 @@ figcaption {
   }
 
   .padding-global {
+    width: 100%;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
@@ -4287,6 +4368,10 @@ figcaption {
 
   .spacer-medium {
     padding-top: 1.5rem;
+  }
+
+  .section_hero {
+    padding-top: 3rem;
   }
 
   .hero_component {
@@ -4376,6 +4461,10 @@ figcaption {
 
   .section_limited._2 {
     background-position: 80%;
+  }
+
+  .limited_component {
+    margin-top: 1rem;
   }
 
   .h-flex-center-16 {
@@ -4525,7 +4614,7 @@ figcaption {
   .footer_top {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-bottom: 3rem;
   }
 
@@ -4546,15 +4635,12 @@ figcaption {
   }
 
   .notification {
-    height: 3.6rem;
+    height: 48px;
     align-items: center;
-    display: flex;
-    position: static;
   }
 
   .navigation {
-    padding-top: 1.5rem;
-    top: 3.6rem;
+    position: relative;
   }
 
   .navbar_left {
@@ -4591,10 +4677,6 @@ figcaption {
 
   .system_video-wrap {
     top: -1.5rem;
-  }
-
-  .champions-logo {
-    width: 6rem;
   }
 
   .features_image {
@@ -4675,6 +4757,12 @@ figcaption {
   .text-block {
     width: 60px;
     font-size: 1.3rem;
+  }
+
+  .link-block {
+    height: 190px;
+    margin-top: 0;
+    margin-bottom: -30px;
   }
 }
 
@@ -4791,6 +4879,10 @@ figcaption {
     padding-top: 1.5rem;
   }
 
+  .section_hero {
+    padding-top: 3rem;
+  }
+
   .hero_component {
     grid-column-gap: 1em;
     grid-row-gap: 1em;
@@ -4892,9 +4984,14 @@ figcaption {
     height: 12rem;
   }
 
+  .limited_component {
+    margin-top: 2.5rem;
+  }
+
   .h-flex-center-16 {
     grid-column-gap: .4rem;
     grid-row-gap: .4rem;
+    margin-top: .6rem;
   }
 
   .icon_star.is-grey {
@@ -4903,6 +5000,10 @@ figcaption {
 
   .limited_text {
     max-width: 270px;
+  }
+
+  .h2.text-weight-medium.ouoftime {
+    font-size: 2.2rem;
   }
 
   .h2.is-larger {
@@ -4976,15 +5077,23 @@ figcaption {
     bottom: -21%;
   }
 
+  .footer_top {
+    margin-top: 0;
+  }
+
   .footer_link {
     font-size: 1rem;
   }
 
+  .footer_links {
+    flex-direction: column;
+  }
+
   .notification {
+    height: auto;
     justify-content: center;
     align-items: center;
     font-size: .7rem;
-    display: flex;
   }
 
   .navigation {
@@ -5095,6 +5204,15 @@ figcaption {
     max-height: 1px;
     background-color: #b96060;
     position: relative;
+  }
+
+  .div-block-10 {
+    padding-top: .125rem;
+    padding-bottom: .25rem;
+  }
+
+  .html-embed-2 {
+    margin-top: 0;
   }
 }
 
