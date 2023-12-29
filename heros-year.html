@@ -3336,7 +3336,6 @@ tabLoop();
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
     // Display the result
     document.getElementById("timer_d").innerHTML = (days > 0 ? ("0" + days).slice(-2) : '00') + "d";
     document.getElementById("timer_h").innerHTML = (hours > 0 ? ("0" + hours).slice(-2) : '00') + "h";
