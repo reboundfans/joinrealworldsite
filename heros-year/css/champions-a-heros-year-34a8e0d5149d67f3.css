@@ -2494,6 +2494,11 @@ figcaption {
   display: flex;
 }
 
+.cta_price-wrap.left {
+  max-width: 240px;
+  align-items: flex-end;
+}
+
 .cta_bot {
   grid-column-gap: 2.5rem;
   grid-row-gap: 2.5rem;
@@ -3435,6 +3440,10 @@ figcaption {
   font-size: .88rem;
 }
 
+.cta_text_save-copy.left {
+  text-align: right;
+}
+
 .text-span-2 {
   white-space: nowrap;
 }
@@ -3989,6 +3998,14 @@ figcaption {
     align-items: flex-start;
   }
 
+  .cta_price-wrap {
+    flex: 1;
+  }
+
+  .cta_price-wrap.left {
+    align-items: center;
+  }
+
   .price-lock_component {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -4122,6 +4139,14 @@ figcaption {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .div-block-6 {
+    width: 100px;
+  }
+
+  .cta_text_save-copy.left {
+    text-align: center;
   }
 
   .link-block {
@@ -4585,6 +4610,11 @@ figcaption {
     font-size: 2rem;
   }
 
+  .cta_price-wrap.left {
+    max-width: none;
+    align-items: flex-start;
+  }
+
   .cta_grid {
     grid-template-columns: 1fr;
   }
@@ -4748,14 +4778,29 @@ figcaption {
     padding-right: 1rem;
   }
 
+  .div-block-5 {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-direction: column;
+  }
+
   .div-block-6 {
-    flex: 1;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: auto;
+    height: auto;
+    aspect-ratio: auto;
+    border-left-style: none;
+    border-right-style: none;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cta_text_save-copy.left {
+    text-align: left;
   }
 
   .text-block {
-    width: 60px;
+    color: var(--a7a297);
     font-size: 1.3rem;
   }
 
@@ -5064,6 +5109,12 @@ figcaption {
     font-size: 2.6rem;
   }
 
+  .cta_price-wrap.left {
+    max-width: none;
+    align-self: flex-start;
+    align-items: flex-start;
+  }
+
   .cta_line.mobile {
     width: 100%;
     display: block;
@@ -5177,6 +5228,8 @@ figcaption {
   }
 
   .div-block-5 {
+    grid-column-gap: 11px;
+    grid-row-gap: 11px;
     flex-direction: column;
   }
 
@@ -5191,6 +5244,10 @@ figcaption {
     justify-content: flex-start;
     align-items: center;
     margin: 1rem 0;
+  }
+
+  .cta_text_save-copy, .cta_text_save-copy.left {
+    text-align: left;
   }
 
   .text-block {
