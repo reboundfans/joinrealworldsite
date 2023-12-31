@@ -4396,7 +4396,7 @@ figcaption {
   }
 
   .section_hero {
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 
   .hero_component {
@@ -4665,7 +4665,6 @@ figcaption {
   }
 
   .notification {
-    height: 48px;
     align-items: center;
   }
 
@@ -4925,7 +4924,7 @@ figcaption {
   }
 
   .section_hero {
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 
   .hero_component {
@@ -5192,8 +5191,8 @@ figcaption {
     font-size: 1.2rem;
   }
 
-  .notification_text {
-    max-width: 16.2rem;
+  .notification_text.text-color-white {
+    max-width: none;
   }
 
   .banner_image {
