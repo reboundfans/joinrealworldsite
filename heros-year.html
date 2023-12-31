@@ -3307,33 +3307,7 @@ tabLoop();
 });
 });
 </script>
- <!--   timer   -->
- <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Dec 31, 2023 23:59:59 GMT+0200").getTime();
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-    // Get today's date and time
-    var now = new Date().getTime();
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display the result
-    document.getElementById("timer_d").innerHTML = (days > 0 ? ("0" + days).slice(-2) : '00') + "d";
-    document.getElementById("timer_h").innerHTML = (hours > 0 ? ("0" + hours).slice(-2) : '00') + "h";
-    document.getElementById("timer_m").innerHTML = (minutes > 0 ? ("0" + minutes).slice(-2) : '00') + "m";
-    document.getElementById("timer_s").innerHTML = (seconds > 0 ? ("0" + seconds).slice(-2) : '00') + "s";
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-    }
-  }, 1000);
-  </script>
+ 
   <script src="https://embed.cloudflarestream.com/embed/sdk.latest.js"></script>
   <script>
   	const campusVideos = [
