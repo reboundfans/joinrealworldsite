@@ -2963,6 +2963,10 @@ figcaption {
   align-items: flex-start;
 }
 
+.section_work {
+  padding-left: 2.5rem;
+}
+
 .work_image {
   width: 110%;
   max-width: none;
@@ -3403,7 +3407,7 @@ figcaption {
 
 .svg_timeline {
   width: 2.4rem;
-  height: auto;
+  height: 40px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -4131,6 +4135,10 @@ figcaption {
     margin-top: 2rem;
     padding-bottom: 2rem;
     position: relative;
+  }
+
+  .section_work {
+    padding-left: 0;
   }
 
   .work_image {
@@ -5025,11 +5033,6 @@ figcaption {
 }
 
 @media screen and (max-width: 479px) {
-
-  .div-block-2 {
-    margin-top: 20px;
-  }
-
   h1 {
     max-width: 18rem;
   }
@@ -5255,8 +5258,8 @@ figcaption {
     bottom: -2rem;
   }
 
-  .interviewer_name {
-    font-size: 1.1rem;
+  .interviewer_name_wrap {
+    font-size: 1.25rem;
   }
 
   .image_flag {
@@ -5480,7 +5483,7 @@ figcaption {
   }
 
   .timeline_h3 {
-    flex: none;
+    flex: 1;
   }
 
   .timeline_h3.is-last {
@@ -5551,6 +5554,10 @@ figcaption {
 
   .understand_img.is-right {
     left: -24%;
+  }
+
+  .div-block-2 {
+    margin-top: 20px;
   }
 }
 
