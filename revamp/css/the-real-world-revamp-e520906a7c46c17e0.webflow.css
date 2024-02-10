@@ -1292,7 +1292,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -2rem;
+  margin-top: 6.8rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -2446,6 +2446,7 @@ figcaption {
 
 .navbar_left {
   z-index: 999;
+  flex: 1;
   align-items: center;
   display: flex;
   position: relative;
@@ -2453,7 +2454,7 @@ figcaption {
 
 .navbar_content {
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
 }
 
@@ -2470,10 +2471,6 @@ figcaption {
 .trw-logo {
   width: 7rem;
   height: 7rem;
-}
-
-.trw-logo.is-nav {
-  display: none;
 }
 
 .text-under-button {
@@ -3107,6 +3104,10 @@ figcaption {
   display: none;
 }
 
+.link-block {
+  display: none;
+}
+
 .timeline_fade {
   width: 100%;
   height: 15vw;
@@ -3231,14 +3232,16 @@ figcaption {
 }
 
 .logo-wrap {
-  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .hero_logo-wrap {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 .h1 {
@@ -3494,6 +3497,12 @@ figcaption {
 .video-embed-flagship {
   aspect-ratio: 16 / 9;
   position: relative;
+}
+
+.div-block-3 {
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
 }
 
 @media screen and (min-width: 1440px) {
@@ -3852,7 +3861,7 @@ figcaption {
   }
 
   .hero_content {
-    margin-top: 0;
+    margin-top: 5.1rem;
   }
 
   .hero_video_wrap {
@@ -4466,6 +4475,10 @@ figcaption {
     font-size: .8rem;
   }
 
+  .hero_content {
+    margin-top: .5rem;
+  }
+
   .hero_video_wrap {
     box-shadow: none;
     order: 2;
@@ -4728,12 +4741,9 @@ figcaption {
     top: 36px;
   }
 
-  .navbar_left {
-    order: 1;
-  }
-
   .navbar_content {
     justify-content: space-between;
+    align-items: center;
   }
 
   .button_wrap {
@@ -4950,7 +4960,6 @@ figcaption {
   .logo-wrap {
     text-transform: uppercase;
     flex-direction: column;
-    order: 2;
     align-items: center;
     font-size: .8rem;
     font-weight: 700;
@@ -5298,6 +5307,7 @@ figcaption {
   }
 
   .navbar_left {
+    flex: 0 auto;
     justify-content: space-between;
   }
 
@@ -5431,7 +5441,6 @@ figcaption {
 
   .link-block {
     color: var(--white);
-    flex: 0 auto;
     order: 3;
     display: flex;
   }
@@ -5468,6 +5477,7 @@ figcaption {
   }
 
   .logo-wrap {
+    width: 100%;
     grid-column-gap: .25em;
     grid-row-gap: .25em;
     flex-direction: column;
