@@ -1292,7 +1292,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 6.8rem;
+  margin-top: -2rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -3861,7 +3861,9 @@ figcaption {
   }
 
   .hero_content {
-    margin-top: 5.1rem;
+    margin-top: -2rem;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .hero_video_wrap {
@@ -4050,7 +4052,11 @@ figcaption {
   }
 
   .hero-stat_wrap_right {
-    right: -8%;
+    right: -3%;
+  }
+
+  .hero-stat_wrap_left {
+    left: -3.5%;
   }
 
   .understand_grid {
@@ -4476,7 +4482,9 @@ figcaption {
   }
 
   .hero_content {
-    margin-top: .5rem;
+    margin-top: -5.7rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .hero_video_wrap {
@@ -4742,6 +4750,7 @@ figcaption {
   }
 
   .navbar_content {
+    height: 100px;
     justify-content: space-between;
     align-items: center;
   }
@@ -5016,6 +5025,11 @@ figcaption {
 }
 
 @media screen and (max-width: 479px) {
+
+  .div-block-2 {
+    margin-top: 20px;
+  }
+
   h1 {
     max-width: 18rem;
   }
@@ -5133,7 +5147,11 @@ figcaption {
   }
 
   .hero_content {
-    margin-top: -1.5rem;
+    margin-top: -6rem;
+  }
+
+  .hero_video_wrap {
+    z-index: 20;
   }
 
   .timeline_content {
@@ -5279,6 +5297,7 @@ figcaption {
     width: 100%;
     background-color: #131b23;
     border-radius: 8px;
+    margin-bottom: 0;
     padding: .6rem;
   }
 
@@ -5312,6 +5331,7 @@ figcaption {
   }
 
   .navbar_content {
+    height: 70px;
     flex-direction: row;
   }
 
@@ -5477,6 +5497,7 @@ figcaption {
   }
 
   .logo-wrap {
+    z-index: 50;
     width: 100%;
     grid-column-gap: .25em;
     grid-row-gap: .25em;
@@ -5678,7 +5699,7 @@ figcaption {
 
 @font-face {
   font-family: 'Inter Variablefont Slnt Wght';
-  src: url('../images/') format('woff2');
+  src: url('../fonts/Inter-VariableFont_slntwght.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;

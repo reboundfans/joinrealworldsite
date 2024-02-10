@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: http://jointherealworld.com/sitemap.xml
