@@ -1285,6 +1285,7 @@ figcaption {
   font-weight: 500;
   line-height: 1;
   display: inline-block;
+  z-index:20;
 }
 
 .hero_content {
