@@ -1285,7 +1285,6 @@ figcaption {
   font-weight: 500;
   line-height: 1;
   display: inline-block;
-  z-index:20;
 }
 
 .hero_content {
@@ -4536,6 +4535,7 @@ figcaption {
   }
 
   .hflex-center-8 {
+    align-items: flex-start;
     display: flex;
   }
 
@@ -4914,6 +4914,10 @@ figcaption {
     right: 0;
   }
 
+  .opacity70 {
+    text-align: left;
+  }
+
   .spacer-medium-copy {
     padding-top: .1rem;
   }
@@ -4938,8 +4942,15 @@ figcaption {
     display: flex;
   }
 
-  .icon-embed-custom-37, .icon-embed-custom-38, .icon-embed-custom-42 {
+  .icon-embed-custom-37, .icon-embed-custom-38 {
     color: var(--brand);
+    margin-top: 2px;
+  }
+
+  .icon-embed-custom-42 {
+    color: var(--brand);
+    margin-top: 2px;
+    padding-top: 0;
   }
 
   .success-images_wrap {
@@ -5146,6 +5157,7 @@ figcaption {
   }
 
   .title-gray {
+    z-index: 20;
     font-size: .7rem;
     position: relative;
   }
@@ -5707,7 +5719,7 @@ figcaption {
 
 @font-face {
   font-family: 'Inter Variablefont Slnt Wght';
-  src: url('../fonts/Inter-VariableFont_slntwght.woff2') format('woff2');
+  src: url('../images/') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
