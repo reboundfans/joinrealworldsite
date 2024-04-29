@@ -4138,24 +4138,25 @@ overflow: clip;
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!--  [Attributes by Finsweet] CMS Load  -->
   <script async="" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsload@1/cmsload.js"></script>
-  <script>
-const gallerySlider = new Swiper(".swiper", {
-  // Parameters
-  loop: true,
-  slidesPerView: 2.3,
-  grabCursor: true,
-  centeredSlides: true,
-  speed: 400,
-  parallax: true,
-	spaceBetween: 16,
-    navigation: {
-    nextEl: '.swiper_right',
-    prevEl: '.swiper_left',
-  },
-});
-</script>
   <script src="https://embed.cloudflarestream.com/embed/sdk.latest.js"></script>
   <script>
+    //slider
+  const gallerySlider = new Swiper(".swiper", {
+    // Parameters
+    loop: true,
+    slidesPerView: 2.3,
+    grabCursor: true,
+    centeredSlides: true,
+    speed: 400,
+    parallax: true,
+    spaceBetween: 16,
+      navigation: {
+      nextEl: '.swiper_right',
+      prevEl: '.swiper_left',
+    },
+  });
+
+    //videos
   	const campusVideos = [
       {el: 'ecom-promo' , vidCode: '545525ce2ac830b7bde6c45217b33d89'},
       {el: 'copy-promo' , vidCode: 'a3275cb75cdc1f06b646942fc851b7ce'},
@@ -4273,9 +4274,9 @@ const gallerySlider = new Swiper(".swiper", {
     window.scrollTo(window.scrollX, window.scrollY - 1);
 		window.scrollTo(window.scrollX, window.scrollY + 1);
   });
-</script>
 
-<script>
+
+//affiliates
   var params = new URLSearchParams(window.location.search);
   var affiliateId = params.get('a');
   var liveCode = params.get('live');
@@ -4374,8 +4375,8 @@ $('.checkout-btn').on('click', function(){
   posthog.capture('join_now');
   hj('event', 'join_now');
 });
-</script>
-<script>
+
+  //purchases 
   const source = new EventSource('https://secure.jointherealworld.com/api/purchases');
   source.addEventListener('purchase', purchaseEvent => {
   const data = JSON.parse(purchaseEvent.data);
