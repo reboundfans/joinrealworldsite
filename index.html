@@ -427,14 +427,11 @@ overflow: clip;
     const player = Stream(document.getElementById('hero-video'));
     // Function to restart video
     function restartVideo() {
-    console.log('restartVideo');
-    	console.log('restart');
       player.currentTime = 0;
       player.play();
     }
     //Function to toggle mute
     function toggleMute() {
-    console.log('toggleMute');
     	if(player.muted === void(0)) player.muted = true;
       if (player.muted) {
         // Unmuted
@@ -4119,11 +4116,15 @@ overflow: clip;
                   <div class="footer_link-line"></div>
                   <a href="https://jointherealworld.com/privacy-policy" target="_blank" class="footer_link">Privacy Policy</a>
                   <div class="footer_link-line"></div>
+                  <a href="https://jointherealworld.com/download" target="_blank" class="footer_link">Download</a>
+                  <div class="footer_link-line"></div>
                   <a href="https://www.jointherealworld.com/manage" target="_blank" class="footer_link">Manage Membership</a>
                   <div class="footer_link-line"></div>
                   <a href="https://therlworld.com/" target="_blank" class="footer_link">Partner Site</a>
                 </div>
                 <p class="text-footer hide-mobile-landscape">Everything taught within The Real World is for education purposes only. It is up to each student to implement and do the work.<br><br>The Real World team doesn’t guarantee any profits or financial success.</p>
+                <div class="footer_line_small"></div>
+                <p class="text-footer hide-mobile-landscape">Owned and Managed by New Era Learning LLC<br><br>Distributed by our partners:<br>‍<br>Thrifty Consulting LLC<br>800 North State St Ste 403, Dover, DE 19901<br><br>Legendary Courses, Inc<br>221 N. Broad St.Middletown, DE 19709&quot;</p>
               </div>
               <div class="w-layout-vflex footer_right">
                 <div class="w-layout-vflex footer_support">
@@ -4136,6 +4137,8 @@ overflow: clip;
                   <div>Log In</div>
                 </a>
                 <p class="footer_text">Everything taught within The Real World is for education purposes only. It is up to each student to implement and do the work.<br><br>The Real World team doesn’t guarantee any profits or financial success.</p>
+                <div class="footer_line_small hide_dexk"></div>
+                <p class="text-footer hide-desk">Owned and Managed by New Era Learning LLC<br><br>Distributed by our partners:<br>‍<br>Thrifty Consulting LLC<br>800 North State St Ste 403, Dover, DE 19901<br><br>Legendary Courses, Inc<br>221 N. Broad St.Middletown, DE 19709&quot;</p>
               </div>
             </div>
           </div>
@@ -4381,7 +4384,6 @@ const gallerySlider = new Swiper(".swiper", {
     }
   });
 $('.checkout-btn').on('click', function(){
-  console.log('checkout clicked');
   posthog.capture('join_now');
   hj('event', 'join_now');
 });
