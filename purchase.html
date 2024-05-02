@@ -48,6 +48,8 @@
 				z-index: 999;
 				max-width: 80vw;
 				width: 500px;
+				margin-bottom: 15vh;
+				margin-top: 15vh;
 				padding: 10px 50px 10px 15px;
 				background-color: #fff;
 				border-radius: 0 15px 15px 0;
@@ -115,7 +117,7 @@
 				var screenW = document.documentElement.clientWidth;
 				var position = screenW < 767 ? 'top-left' : 'bottom-left';
 				alertify.set('notifier', 'position', position);
-				alertify.message(div,7);
+				alertify.message(div,0);
 			}
 			function abbreviateName(name) {
 				if (!name || name.trim().length <= 0) return 'Anon';
