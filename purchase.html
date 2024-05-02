@@ -115,7 +115,7 @@
 				var screenW = document.documentElement.clientWidth;
 				var position = screenW < 767 ? 'top-left' : 'bottom-left';
 				alertify.set('notifier', 'position', position);
-				alertify.message(div);
+				alertify.message(div,7);
 			}
 			function abbreviateName(name) {
 				if (!name || name.trim().length <= 0) return 'Anon';
