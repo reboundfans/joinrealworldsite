@@ -1997,6 +1997,12 @@ figcaption {
 
 .hero_sub-paragraph {
   color: var(--white);
+  text-align: center;
+  text-transform: none;
+  -webkit-text-fill-color: inherit;
+  background-image: none;
+  background-clip: border-box;
+  margin-bottom: 0;
   font-family: Inter Variablefont Slnt Wght, sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
@@ -5746,7 +5752,7 @@ figcaption {
 
 @font-face {
   font-family: 'Inter Variablefont Slnt Wght';
-  src: url('../fonts/Inter-VariableFont_slntwght.woff2') format('woff2');
+  src: url('../images/') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
